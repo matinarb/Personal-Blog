@@ -1,0 +1,26 @@
+﻿@page
+@model MyApp.Namespace.RegisterModel
+@{
+    Layout = "Shared/_AuthLayout";
+    ViewData["Title"]= "ثبت نام";
+}
+<form method="post">
+    <h1>@ViewData["Title"]</h1>
+    <div>
+        <input type="text" asp-for="fullname" placeholder="نام و نام خانوادگی" />
+        <span asp-validation-for="fullname"></span>
+    </div>
+    <div>
+        <input type="text" asp-for="username" placeholder="نام کاربری" />
+        <span asp-validation-for="username"></span>
+    </div>
+    <div>
+        <input type="password" asp-for="password" placeholder="کلمه عبور" />
+        <span asp-validation-for="password"></span>
+    </div>
+    <div>
+        <input type="submit" value="ثبت نام" />
+        <a asp-page="Index" >فراموشی کلمه عبور</a>
+        <a asp-page="Login" >ورود</a>
+    </div>
+</form>
