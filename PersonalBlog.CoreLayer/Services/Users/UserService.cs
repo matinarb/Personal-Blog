@@ -35,15 +35,22 @@ namespace PersonalBlog.CoreLayer.Services.Users
             return OperationResult.Success();
         }
 
-        public OperationResult LoginUser(UserLoginDto loginDto)
+        public UserDto LoginUser(UserLoginDto loginDto)
         {
             var PasswordHash = loginDto.Password.EncodeToMd5();
-            var isLoggedIn = _context.Users.Any(u => u.UserName == loginDto.UserName && u.Password== PasswordHash);
-            if(!isLoggedIn)
-                return OperationResult.NotFound("نام کاربری یا رمز عبور اشتباه است");
+            var user = _context.Users.FirstOrDefault(u=> u.UserName==loginDto.UserName && u.Password==PasswordHash); 
+            if(user == null)
+                return null;
 
 
-            return OperationResult.Success();
+            return new UserDto(){
+                UserName = user.UserName,
+                Password = user.Password,
+                FullName = user.FullName,
+                Role = user.Role,
+                UserId = user.Id,
+                CreationDate = user.CreationDate
+            };
         }
     }
 

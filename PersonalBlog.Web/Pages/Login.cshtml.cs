@@ -1,4 +1,7 @@
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalBlog.CoreLayer.DTOs.Users;
@@ -35,16 +38,30 @@ namespace MyApp.Namespace
             if(!ModelState.IsValid){
                 return Page();
             }
-            var isLoggedIn = _userService.LoginUser(new UserLoginDto()
+            var user = _userService.LoginUser(new UserLoginDto()
             {
                 UserName = UserName,
                 Password = Password
             });
-            if (isLoggedIn.Status == OperationResultStatus.NotFound)
+            if (user == null)
             {
-                ModelState.AddModelError("UserName", isLoggedIn.Message);
+                ModelState.AddModelError("UserName", "چنین کاربری وجود ندارد");
                 return Page();
             }
+
+            List<Claim> claims = new List<Claim>()
+            {
+                new Claim("test","taest"),
+                new Claim(ClaimTypes.NameIdentifier , user.UserId.ToString()),
+                new Claim(ClaimTypes.Name , user.FullName)
+            };
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var claimPrincipal = new ClaimsPrincipal(identity);
+            var properties = new AuthenticationProperties()
+            {
+                IsPersistent = true
+            };
+            HttpContext.SignInAsync(claimPrincipal , properties);
 
             return RedirectToPage("Index");
 

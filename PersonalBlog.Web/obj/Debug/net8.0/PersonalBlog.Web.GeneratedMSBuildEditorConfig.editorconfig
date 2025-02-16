@@ -26,54 +26,54 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\GitHub\Personal-Blog\PersonalBlog.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Error.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Index.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Login.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Privacy.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Register.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/Header/_MainHeader.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/Header/_MainHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEhlYWRlclxfTWFpbkhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/Header/_SideNav.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/Header/_SideNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEhlYWRlclxfU2lkZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/Header/_TopHeader.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/Header/_TopHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEhlYWRlclxfVG9wSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_AuthLayout.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_Footer.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_Layout.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/_ViewImports.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/_ViewStart.cshtml]
+[E:/GitHub/Personal-Blog/PersonalBlog.Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
