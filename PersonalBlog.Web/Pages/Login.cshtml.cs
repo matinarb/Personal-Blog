@@ -8,7 +8,7 @@ using PersonalBlog.CoreLayer.DTOs.Users;
 using PersonalBlog.CoreLayer.Services.Users;
 using PersonalBlog.CoreLayer.Utilities;
 
-namespace MyApp.Namespace
+namespace PersonalBlog.Web.Pages
 {
     [ValidateAntiForgeryToken]
     [BindProperties]

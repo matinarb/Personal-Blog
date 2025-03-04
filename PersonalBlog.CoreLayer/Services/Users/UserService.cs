@@ -9,7 +9,6 @@ namespace PersonalBlog.CoreLayer.Services.Users
     public class UserService : IUserService
     {
         private readonly BlogContext _context;
-
         public UserService(BlogContext context)
         {
             _context = context;

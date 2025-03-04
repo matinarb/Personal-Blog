@@ -11,8 +11,9 @@ namespace PersonalBlog.DataLayer.Entities
         public string Title { get; set; }
         [Required]
         public string Slug { get; set; }
-        public string MetaTag { get; set; }
-        public string MetaDescription { get; set; }
+        public string? MetaTag { get; set; }
+        public string? MetaDescription { get; set; }
+        public int ParentId { get; set; }
 
 
         #region relations

@@ -5,6 +5,290 @@
       "PackagePath": "staticwebassets\\AuthLayout\\css\\main.css"
     },
     {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\grunt\\.jshintrc",
+      "PackagePath": "staticwebassets\\build\\grunt\\.jshintrc"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\.jscsrc",
+      "PackagePath": "staticwebassets\\build\\js\\.jscsrc"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\.jshintrc",
+      "PackagePath": "staticwebassets\\build\\js\\.jshintrc"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\BoxRefresh.js",
+      "PackagePath": "staticwebassets\\build\\js\\BoxRefresh.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\BoxWidget.js",
+      "PackagePath": "staticwebassets\\build\\js\\BoxWidget.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\ControlSidebar.js",
+      "PackagePath": "staticwebassets\\build\\js\\ControlSidebar.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\DirectChat.js",
+      "PackagePath": "staticwebassets\\build\\js\\DirectChat.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\Layout.js",
+      "PackagePath": "staticwebassets\\build\\js\\Layout.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\PushMenu.js",
+      "PackagePath": "staticwebassets\\build\\js\\PushMenu.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\TodoList.js",
+      "PackagePath": "staticwebassets\\build\\js\\TodoList.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\js\\Tree.js",
+      "PackagePath": "staticwebassets\\build\\js\\Tree.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\.csslintrc",
+      "PackagePath": "staticwebassets\\build\\less\\.csslintrc"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\404_500_errors.less",
+      "PackagePath": "staticwebassets\\build\\less\\404_500_errors.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\AdminLTE-without-plugins.less",
+      "PackagePath": "staticwebassets\\build\\less\\AdminLTE-without-plugins.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\AdminLTE.less",
+      "PackagePath": "staticwebassets\\build\\less\\AdminLTE.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\alerts.less",
+      "PackagePath": "staticwebassets\\build\\less\\alerts.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\bootstrap-social.less",
+      "PackagePath": "staticwebassets\\build\\less\\bootstrap-social.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\boxes.less",
+      "PackagePath": "staticwebassets\\build\\less\\boxes.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\buttons.less",
+      "PackagePath": "staticwebassets\\build\\less\\buttons.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\callout.less",
+      "PackagePath": "staticwebassets\\build\\less\\callout.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\carousel.less",
+      "PackagePath": "staticwebassets\\build\\less\\carousel.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\control-sidebar.less",
+      "PackagePath": "staticwebassets\\build\\less\\control-sidebar.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\core.less",
+      "PackagePath": "staticwebassets\\build\\less\\core.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\datepicker.less",
+      "PackagePath": "staticwebassets\\build\\less\\datepicker.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\direct-chat.less",
+      "PackagePath": "staticwebassets\\build\\less\\direct-chat.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\dropdown.less",
+      "PackagePath": "staticwebassets\\build\\less\\dropdown.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\forms.less",
+      "PackagePath": "staticwebassets\\build\\less\\forms.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\fullcalendar.less",
+      "PackagePath": "staticwebassets\\build\\less\\fullcalendar.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\header.less",
+      "PackagePath": "staticwebassets\\build\\less\\header.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\info-box.less",
+      "PackagePath": "staticwebassets\\build\\less\\info-box.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\invoice.less",
+      "PackagePath": "staticwebassets\\build\\less\\invoice.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\labels.less",
+      "PackagePath": "staticwebassets\\build\\less\\labels.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\lockscreen.less",
+      "PackagePath": "staticwebassets\\build\\less\\lockscreen.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\login_and_register.less",
+      "PackagePath": "staticwebassets\\build\\less\\login_and_register.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\mailbox.less",
+      "PackagePath": "staticwebassets\\build\\less\\mailbox.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\miscellaneous.less",
+      "PackagePath": "staticwebassets\\build\\less\\miscellaneous.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\build\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\modal.less",
+      "PackagePath": "staticwebassets\\build\\less\\modal.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\navs.less",
+      "PackagePath": "staticwebassets\\build\\less\\navs.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\plugins.less",
+      "PackagePath": "staticwebassets\\build\\less\\plugins.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\print.less",
+      "PackagePath": "staticwebassets\\build\\less\\print.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\products.less",
+      "PackagePath": "staticwebassets\\build\\less\\products.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\profile.less",
+      "PackagePath": "staticwebassets\\build\\less\\profile.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\progress-bars.less",
+      "PackagePath": "staticwebassets\\build\\less\\progress-bars.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\select2.less",
+      "PackagePath": "staticwebassets\\build\\less\\select2.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\sidebar-mini.less",
+      "PackagePath": "staticwebassets\\build\\less\\sidebar-mini.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\sidebar.less",
+      "PackagePath": "staticwebassets\\build\\less\\sidebar.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\_all-skins.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\_all-skins.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-black-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-black-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-black.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-black.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-blue-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-blue-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-blue.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-blue.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-green-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-green-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-green.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-green.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-purple-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-purple-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-purple.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-purple.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-red-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-red-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-red.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-red.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-yellow-light.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-yellow-light.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\skins\\skin-yellow.less",
+      "PackagePath": "staticwebassets\\build\\less\\skins\\skin-yellow.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\small-box.less",
+      "PackagePath": "staticwebassets\\build\\less\\small-box.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\social-widgets.less",
+      "PackagePath": "staticwebassets\\build\\less\\social-widgets.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\table.less",
+      "PackagePath": "staticwebassets\\build\\less\\table.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\timeline.less",
+      "PackagePath": "staticwebassets\\build\\less\\timeline.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\treeview.less",
+      "PackagePath": "staticwebassets\\build\\less\\treeview.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\users-list.less",
+      "PackagePath": "staticwebassets\\build\\less\\users-list.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\less\\variables.less",
+      "PackagePath": "staticwebassets\\build\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\scss\\_bootstrap_variables.scss",
+      "PackagePath": "staticwebassets\\build\\scss\\_bootstrap_variables.scss"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\scss\\_bootstrap_variables_old2.scss",
+      "PackagePath": "staticwebassets\\build\\scss\\_bootstrap_variables_old2.scss"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\scss\\_header.scss",
+      "PackagePath": "staticwebassets\\build\\scss\\_header.scss"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\build\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\build\\scss\\_variables.scss"
+    },
+    {
       "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -51,6 +335,410 @@
     {
       "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\css\\style.css.map",
       "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\AdminLTE.css",
+      "PackagePath": "staticwebassets\\dist\\css\\AdminLTE.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\dist\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\dist\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-bootstrap-social.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-bootstrap-social.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-bootstrap-social.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-bootstrap-social.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-fullcalendar.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-fullcalendar.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-fullcalendar.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-select2.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-select2.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-select2.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-select2.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-without-plugins.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-without-plugins.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\alt\\AdminLTE-without-plugins.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\alt\\AdminLTE-without-plugins.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\customize-adminlte.css",
+      "PackagePath": "staticwebassets\\dist\\css\\customize-adminlte.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\persian-datepicker-0.4.5.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\persian-datepicker-0.4.5.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\rtl.css",
+      "PackagePath": "staticwebassets\\dist\\css\\rtl.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\_all-skins.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\_all-skins.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\_all-skins.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\_all-skins.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-black-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-black-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-black-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-black-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-black.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-black.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-black.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-black.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-blue-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-blue-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-blue-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-blue-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-blue.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-blue.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-blue.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-blue.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-green-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-green-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-green-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-green-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-green.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-green.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-green.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-green.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-purple-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-purple-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-purple-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-purple-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-purple.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-purple.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-purple.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-purple.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-red-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-red-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-red-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-red-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-red.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-red.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-red.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-red.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-yellow-light.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-yellow-light.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-yellow-light.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-yellow-light.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-yellow.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-yellow.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\css\\skins\\skin-yellow.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\skins\\skin-yellow.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-Bold-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-Bold-FD-WOL.eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-Bold-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-Bold-FD-WOL.ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-Bold-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-Bold-FD-WOL.woff"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-FD-WOL.eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-FD-WOL.ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\Vazir-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\Vazir-FD-WOL.woff"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\eot\\iranyekanwebbold(fanum).eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\eot\\iranyekanwebbold(fanum).eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\eot\\iranyekanweblight(fanum).eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\eot\\iranyekanweblight(fanum).eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\eot\\iranyekanwebregular(fanum).eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\eot\\iranyekanwebregular(fanum).eot"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\ttf\\iranyekanwebbold(fanum).ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\ttf\\iranyekanwebbold(fanum).ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\ttf\\iranyekanweblight(fanum).ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\ttf\\iranyekanweblight(fanum).ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\ttf\\iranyekanwebregular(fanum).ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\ttf\\iranyekanwebregular(fanum).ttf"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\woff2\\iranyekanwebbold(fanum).woff2",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\woff2\\iranyekanwebbold(fanum).woff2"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\woff2\\iranyekanweblight(fanum).woff2",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\woff2\\iranyekanweblight(fanum).woff2"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\woff2\\iranyekanwebregular(fanum).woff2",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\woff2\\iranyekanwebregular(fanum).woff2"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\woff\\iranyekanwebbold(fanum).woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\woff\\iranyekanwebbold(fanum).woff"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\fonts\\iranyekan\\woff\\iranyekanweblight(fanum).woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\iranyekan\\woff\\iranyekanweblight(fanum).woff"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\dist\\img\\avatar.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\avatar04.png",
+      "PackagePath": "staticwebassets\\dist\\img\\avatar04.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\dist\\img\\avatar2.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\dist\\img\\avatar3.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\dist\\img\\avatar5.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\dist\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\mestro.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\mestro.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\dist\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\default-50x50.gif",
+      "PackagePath": "staticwebassets\\dist\\img\\default-50x50.gif"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\icons.png",
+      "PackagePath": "staticwebassets\\dist\\img\\icons.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\dist\\img\\photo1.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\dist\\img\\photo2.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\photo3.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\photo4.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\user8-128x128.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\demo.js",
+      "PackagePath": "staticwebassets\\dist\\js\\demo.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\dist\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\dist\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\persian-date-0.1.8.min.js",
+      "PackagePath": "staticwebassets\\dist\\js\\persian-date-0.1.8.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\persian-date.js",
+      "PackagePath": "staticwebassets\\dist\\js\\persian-date.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\dist\\js\\persian-datepicker-0.4.5.min.js",
+      "PackagePath": "staticwebassets\\dist\\js\\persian-datepicker-0.4.5.min.js"
     },
     {
       "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\favicon.ico",
@@ -343,6 +1031,582 @@
     {
       "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\js\\twitterFetcher_min.js",
       "PackagePath": "staticwebassets\\js\\twitterFetcher_min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-slider\\bootstrap-slider.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-slider\\bootstrap-slider.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-slider\\slider.css",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-slider\\slider.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.all.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.all.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.all.min.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.all.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.css",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.min.css",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-wysihtml5\\bootstrap3-wysihtml5.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\all.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\all.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\_all.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\_all.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\aero.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\aero.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\aero.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\aero.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\aero@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\aero@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\blue.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\blue.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\blue.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\blue.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\blue@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\blue@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\flat.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\flat.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\flat.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\flat.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\flat@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\flat@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\green.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\green.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\green.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\green.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\green@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\green@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\grey.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\grey.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\grey.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\grey.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\grey@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\grey@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\orange.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\orange.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\orange.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\orange.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\orange@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\orange@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\pink.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\pink.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\pink.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\pink.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\pink@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\pink@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\purple.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\purple.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\purple.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\purple.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\purple@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\purple@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\red.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\red.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\red.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\red.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\red@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\red@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\yellow.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\yellow.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\yellow.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\yellow.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\flat\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\flat\\yellow@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\futurico\\futurico.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\futurico\\futurico.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\futurico\\futurico.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\futurico\\futurico.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\futurico\\futurico@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\futurico\\futurico@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\icheck.js",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\icheck.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\icheck.min.js",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\icheck.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\_all.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\_all.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\aero.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\aero.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\blue.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\blue.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\green.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\green.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\grey.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\grey.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\line.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\line.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\line.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\line.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\line@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\line@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\orange.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\orange.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\pink.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\pink.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\purple.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\purple.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\red.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\red.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\line\\yellow.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\line\\yellow.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\_all.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\_all.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\aero.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\aero.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\aero.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\aero.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\aero@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\aero@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\blue.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\blue.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\blue.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\blue.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\blue@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\blue@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\green.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\green.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\green.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\green.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\green@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\green@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\grey.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\grey.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\grey.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\grey.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\grey@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\grey@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\minimal.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\minimal.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\minimal.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\minimal.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\minimal@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\minimal@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\orange.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\orange.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\orange.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\orange.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\orange@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\orange@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\pink.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\pink.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\pink.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\pink.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\pink@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\pink@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\purple.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\purple.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\purple.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\purple.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\purple@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\purple@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\red.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\red.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\red.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\red.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\red@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\red@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\yellow.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\yellow.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\yellow.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\yellow.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\minimal\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\minimal\\yellow@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\polaris\\polaris.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\polaris\\polaris.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\polaris\\polaris.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\polaris\\polaris.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\polaris\\polaris@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\polaris\\polaris@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\_all.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\_all.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\aero.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\aero.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\aero.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\aero.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\aero@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\aero@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\blue.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\blue.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\blue.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\blue.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\blue@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\blue@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\green.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\green.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\green.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\green.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\green@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\green@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\grey.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\grey.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\grey.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\grey.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\grey@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\grey@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\orange.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\orange.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\orange.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\orange.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\orange@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\orange@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\pink.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\pink.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\pink.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\pink.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\pink@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\pink@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\purple.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\purple.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\purple.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\purple.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\purple@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\purple@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\red.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\red.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\red.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\red.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\red@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\red@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\square.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\square.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\square.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\square.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\square@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\square@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\yellow.css",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\yellow.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\yellow.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\yellow.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\iCheck\\square\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\plugins\\iCheck\\square\\yellow@2x.png"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.date.extensions.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.date.extensions.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.extensions.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.extensions.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.numeric.extensions.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.numeric.extensions.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.phone.extensions.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.phone.extensions.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\jquery.inputmask.regex.extensions.js",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\jquery.inputmask.regex.extensions.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\phone-codes\\phone-be.json",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\phone-codes\\phone-be.json"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\phone-codes\\phone-codes.json",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\phone-codes\\phone-codes.json"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\input-mask\\phone-codes\\readme.txt",
+      "PackagePath": "staticwebassets\\plugins\\input-mask\\phone-codes\\readme.txt"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jQueryUI\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\plugins\\jQueryUI\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jQueryUI\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\plugins\\jQueryUI\\jquery-ui.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jvectormap\\jquery-jvectormap-1.2.2.css",
+      "PackagePath": "staticwebassets\\plugins\\jvectormap\\jquery-jvectormap-1.2.2.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jvectormap\\jquery-jvectormap-1.2.2.min.js",
+      "PackagePath": "staticwebassets\\plugins\\jvectormap\\jquery-jvectormap-1.2.2.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jvectormap\\jquery-jvectormap-usa-en.js",
+      "PackagePath": "staticwebassets\\plugins\\jvectormap\\jquery-jvectormap-usa-en.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\jvectormap\\jquery-jvectormap-world-mill-en.js",
+      "PackagePath": "staticwebassets\\plugins\\jvectormap\\jquery-jvectormap-world-mill-en.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\pace\\pace.css",
+      "PackagePath": "staticwebassets\\plugins\\pace\\pace.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\pace\\pace.js",
+      "PackagePath": "staticwebassets\\plugins\\pace\\pace.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\pace\\pace.min.css",
+      "PackagePath": "staticwebassets\\plugins\\pace\\pace.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\pace\\pace.min.js",
+      "PackagePath": "staticwebassets\\plugins\\pace\\pace.min.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\timepicker\\bootstrap-timepicker.css",
+      "PackagePath": "staticwebassets\\plugins\\timepicker\\bootstrap-timepicker.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\timepicker\\bootstrap-timepicker.js",
+      "PackagePath": "staticwebassets\\plugins\\timepicker\\bootstrap-timepicker.js"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\timepicker\\bootstrap-timepicker.min.css",
+      "PackagePath": "staticwebassets\\plugins\\timepicker\\bootstrap-timepicker.min.css"
+    },
+    {
+      "Id": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\plugins\\timepicker\\bootstrap-timepicker.min.js",
+      "PackagePath": "staticwebassets\\plugins\\timepicker\\bootstrap-timepicker.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PersonalBlog.Web.Microsoft.AspNetCore.StaticWebAssets.props",
