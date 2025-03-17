@@ -64,6 +64,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(EditCategoryViewModel editCategory)
         {
+            if(!ModelState.IsValid) return View(editCategory);
             _categoryService.EditCategory(new EditCategoryDto()
             {
                 Id = editCategory.Id,

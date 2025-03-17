@@ -31,6 +31,11 @@
           <i class="fa fa-th"></i> <span>دسته بندی ها</span>
         </a>
       </li>
+      <li class="@(selected=="post"?"active":null)">
+        <a asp-area="admin" asp-controller="Post" asp-action="Index">
+          <i class="fa fa-th"></i> <span>پست ها</span>
+        </a>
+      </li>
     </ul>
   </section>
 </aside>

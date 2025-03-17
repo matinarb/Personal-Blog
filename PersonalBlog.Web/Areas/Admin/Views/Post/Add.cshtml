@@ -1,0 +1,44 @@
+@model PersonalBlog.Web.Areas.Admin.Models.Posts.CreatePostViewModel
+@{
+    ViewData["Title"] = "افزودن پست";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="admin" asp-controller="Post" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a>
+        </li>
+        <li class="active">@ViewData["Title"]</li>
+    </ol>
+</section>
+<section>
+    <div class="box box-primary">
+        <form enctype="multipart/form-data" role="form" method="post" asp-area="admin" asp-controller="Post" asp-action="Add">
+            <div class="box-body row">
+                <div class="col-md-3">
+                    @Html.EditorFor(Model => Model.Title)
+
+                </div>
+                <div class="col-md-3">
+                    @Html.EditorFor(Model => Model.Image)
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label asp-for="CategoryId"></label>
+                        <select asp-for="CategoryId" class="form-control"></select>
+                        <span asp-validation-for="CategoryId"></span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(Model => Model.Description)
+
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">ارسال</button>
+            </div>
+        </form>
+    </div>
+
+</section>

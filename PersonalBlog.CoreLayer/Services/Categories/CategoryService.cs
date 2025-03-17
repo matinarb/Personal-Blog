@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PersonalBlog.CoreLayer.DTOs.Categories;
+using PersonalBlog.CoreLayer.Mapper.Categories;
 using PersonalBlog.CoreLayer.Utilities;
 using PersonalBlog.DataLayer.Context;
 using PersonalBlog.DataLayer.Entities;
@@ -19,16 +20,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
             addCategoryDto.Slug = addCategoryDto.Title.toSlug();
             if (isSlugExist(addCategoryDto.Slug))
                 return OperationResult.Error("این دسته بندی از قبل وجود دارد");
-            _context.Categories.Add(new Category()
-            {
-                ParentId = addCategoryDto.ParentId,
-                Title = addCategoryDto.Title,
-                Slug = addCategoryDto.Slug,
-                MetaTag = addCategoryDto.MetaTag,
-                MetaDescription = addCategoryDto.MetaDescription,
-                IsDelete = false,
-                CreationDate = DateTime.Now
-            });
+            _context.Categories.Add(CategoryMapper.MapTo(addCategoryDto));
             _context.SaveChanges();
             return OperationResult.Success();
         }
@@ -37,13 +29,9 @@ namespace PersonalBlog.CoreLayer.Services.Categories
         {
             var category = _context.Categories.AsNoTracking().FirstOrDefault(c => c.Id == editCategoryDto.Id);
             if (category == null) return OperationResult.NotFound();
-            editCategoryDto.Slug = editCategoryDto.Title.toSlug();
-            category.Title = editCategoryDto.Title;
-            category.Slug = editCategoryDto.Slug;
-            category.MetaTag = editCategoryDto.MetaTag;
-            category.MetaDescription = editCategoryDto.MetaDescription;
+            var newCategory = CategoryMapper.MapTo(editCategoryDto,category);
 
-            _context.Categories.Update(category);
+            _context.Categories.Update(newCategory);
             _context.SaveChanges();
 
             return OperationResult.Success();
@@ -61,16 +49,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
 
         public List<CategoriesDto> GetAllCategories()
         {
-            var categories = _context.Categories.AsNoTracking().Where(c => c.IsDelete == false).Select(c =>
-                new CategoriesDto()
-                {
-                    Id = c.Id,
-                    ParentId = c.ParentId,
-                    Title = c.Title,
-                    Slug = c.Slug,
-                    MetaTag = c.MetaTag,
-                    MetaDescription = c.MetaDescription,
-                }).ToList();
+            var categories = _context.Categories.AsNoTracking().Where(c => c.IsDelete == false).Select(c =>CategoryMapper.MapTo(c)).ToList();
             return categories;
         }
 
@@ -78,15 +57,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
         {
             var category = _context.Categories.FirstOrDefault(c => c.Id == id);
             if (category == null) return null;
-            var categoryDto = new CategoriesDto()
-            {
-                Id = category.Id,
-                ParentId = category.ParentId,
-                Title = category.Title,
-                Slug = category.Slug,
-                MetaTag = category.MetaTag,
-                MetaDescription = category.MetaDescription,
-            };
+            var categoryDto = CategoryMapper.MapTo(category);
             return categoryDto;
         }
 
@@ -94,15 +65,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
         {
             var category = _context.Categories.FirstOrDefault(c => c.Slug == Slug);
             if (category == null) return null;
-            var categoryDto = new CategoriesDto()
-            {
-                Id = category.Id,
-                ParentId = category.ParentId,
-                Title = category.Title,
-                Slug = category.Slug,
-                MetaTag = category.MetaTag,
-                MetaDescription = category.MetaDescription,
-            };
+            var categoryDto = CategoryMapper.MapTo(category);
             return categoryDto;
         }
 

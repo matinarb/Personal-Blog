@@ -9,6 +9,7 @@ public class Post : BaseEntity
     
     [Required]
     public string Title { get; set; }
+    public string Image { get; set; }
     [Required]
     public string Slug { get; set; }
     [Required]

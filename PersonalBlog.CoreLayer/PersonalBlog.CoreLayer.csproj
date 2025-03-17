@@ -4,6 +4,10 @@
     <ProjectReference Include="..\personalBlog.datalayer\PersonalBlog.DataLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

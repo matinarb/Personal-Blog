@@ -1,1 +1,41 @@
-<h1>test</h1>
+@model PersonalBlog.CoreLayer.DTOs.Posts.FilterPostDto
+@{
+    ViewData["Title"] = "پست ها";
+    ViewData["selected"] = "post";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="admin" asp-controller="Post" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a>
+        </li>
+        <li class="active">@ViewData["Title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <a class="btn btn-success" asp-area="admin" asp-controller="Post" asp-action="Add"
+        style="margin-bottom: 5px;">افزودن پست جدید</a>
+    <div class="box box-primary">
+        <div class="box box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>عکس</th>
+                        <th>نویسنده</th>
+                        <th>گروه</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
