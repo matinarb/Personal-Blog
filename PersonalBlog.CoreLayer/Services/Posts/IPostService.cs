@@ -7,6 +7,7 @@ public interface IPostService
 {
     OperationResult CreatePost(CreatePostDto createPost);
     OperationResult EditPost(EditPostDto editPost);
+    OperationResult DeletePost(int id);
     FilterPostDto GetPostByFilter(PostFilterParams param);
     PostDto GetPostBy(string slug);
     PostDto GetPostBy(int id);

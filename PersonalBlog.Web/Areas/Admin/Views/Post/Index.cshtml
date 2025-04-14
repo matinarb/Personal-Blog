@@ -1,7 +1,9 @@
 @model PersonalBlog.CoreLayer.DTOs.Posts.FilterPostDto
+@using PersonalBlog.CoreLayer.Utilities;
 @{
     ViewData["Title"] = "پست ها";
     ViewData["selected"] = "post";
+    var count = 1;
 }
 <section class="content-header">
     <h1>
@@ -31,7 +33,22 @@
                 </thead>
                 <tbody>
 
-                    
+                    @foreach (var p in Model.posts)
+                    {
+                        <tr>
+                            <td>@count</td>
+                            <td>@p.Title</td>
+                            <td><img style="width: 150px;" src="@Directories.ThumbSrc@p.Image"></td>
+                            <td></td>
+                            <td>@p.Category.Title</td>
+                            <td>
+                                <a asp-area="admin" asp-controller="Post" asp-action="Edit" asp-route-id="@p.PostId" class="btn btn-info btn-sm">ویرایش</a>
+                                <a asp-area="admin" asp-controller="Post" asp-action="Delete" asp-route-id="@p.PostId" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        count++;
+                    }
+
 
                 </tbody>
             </table>

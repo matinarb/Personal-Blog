@@ -4,6 +4,13 @@ namespace PersonalBlog.CoreLayer.Services.FileManager;
 
 public class FileManager : IFileManager
 {
+    public void DeleteFile(string fileName, string path)
+    {
+        var fullPath = Path.Combine(Directory.GetCurrentDirectory(), path, fileName);
+        if (File.Exists(fullPath))
+            File.Delete(fullPath);
+    }
+
     public string SaveFile(IFormFile file, string savePath)
     {
         if (file == null)
@@ -18,8 +25,8 @@ public class FileManager : IFileManager
             Directory.CreateDirectory(folderPath);
 
         using var stream = new FileStream(fullPath, FileMode.Create);
-        file.CopyToAsync(stream);
+        file.CopyTo(stream);
 
-        return fullPath;
+        return fileName;
     }
 }

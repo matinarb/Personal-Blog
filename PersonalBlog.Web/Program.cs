@@ -31,7 +31,7 @@ builder.Services.AddAuthentication(option =>
 {
     option.LoginPath = "/login";
     option.LogoutPath = "/logout";
-    option.ExpireTimeSpan = TimeSpan.FromDays(1);
+    option.ExpireTimeSpan = TimeSpan.FromDays(30);
 });
 
 

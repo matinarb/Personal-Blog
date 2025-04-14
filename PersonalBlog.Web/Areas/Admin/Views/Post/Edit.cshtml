@@ -1,8 +1,9 @@
 @using PersonalBlog.CoreLayer.Services.Categories
-@model PersonalBlog.Web.Areas.Admin.Models.Posts.CreatePostViewModel
+@model PersonalBlog.Web.Areas.Admin.Models.Posts.EditPostViewModel
 @inject ICategoryService categoryService
 @{
-    ViewData["Title"] = "افزودن پست";
+    ViewData["Title"] = "ویرایش پست";
+    ViewData["selected"] = "post";
     var categories = categoryService.GetAllCategories();
 }
 <section class="content-header">
@@ -18,7 +19,7 @@
 <section>
     <div class="box box-primary">
         <form enctype="multipart/form-data" role="form" method="post" asp-area="admin" asp-controller="Post"
-            asp-action="Add">
+            asp-action="edit">
             <div class="box-body row">
                 <div class="col-md-3">
                     @Html.EditorFor(Model => Model.Title)

@@ -28,7 +28,6 @@ public static class PostMapper
         post.Description = editPost.Description;
         post.Slug = editPost.Title.toSlug();
         post.CategoryId = editPost.CategoryId;
-        post.Image = editPost.Image;
         return post;
     }
 
