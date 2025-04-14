@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VNxW95L2ZfK4UVz7Y/KrcG6DFStnVvou3D+8Skw/hsE=",
+  "Hash": "wrO6jSgb89xAOYYl5RaigTCqD2lSTUkphvBfoDFzlhQ=",
   "Source": "PersonalBlog.Web",
   "BasePath": "_content/PersonalBlog.Web",
   "Mode": "Default",
@@ -14362,6 +14362,25 @@
       "OriginalItemSpec": "wwwroot\\img\\content\\single\\Huawei-Mate-X-6.jpg"
     },
     {
+      "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\073dface-b06e-442b-8447-2211d5424c9a1200px-Michelangelo_-_Creation_of_Adam_(cropped).jpg",
+      "SourceId": "PersonalBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\",
+      "BasePath": "_content/PersonalBlog.Web",
+      "RelativePath": "img/content/thumb/073dface-b06e-442b-8447-2211d5424c9a1200px-Michelangelo_-_Creation_of_Adam_(cropped).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\073dface-b06e-442b-8447-2211d5424c9a1200px-Michelangelo_-_Creation_of_Adam_(cropped).jpg"
+    },
+    {
       "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\263a158c-2e6e-44e4-9ce0-69ee45060c823.jpg",
       "SourceId": "PersonalBlog.Web",
       "SourceType": "Discovered",
@@ -14400,12 +14419,12 @@
       "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\626cad24-9cd2-4391-8fd3-74b2475bdbce5.jpg"
     },
     {
-      "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\f7bef391-2ad9-4f69-9367-882dc757fee21.jpg",
+      "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\e05f8764-f699-4c59-9173-6fade84b87d81.jpg",
       "SourceId": "PersonalBlog.Web",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\",
       "BasePath": "_content/PersonalBlog.Web",
-      "RelativePath": "img/content/thumb/f7bef391-2ad9-4f69-9367-882dc757fee21.jpg",
+      "RelativePath": "img/content/thumb/e05f8764-f699-4c59-9173-6fade84b87d81.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -14416,7 +14435,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\f7bef391-2ad9-4f69-9367-882dc757fee21.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\e05f8764-f699-4c59-9173-6fade84b87d81.jpg"
     },
     {
       "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\post-1.jpg",
