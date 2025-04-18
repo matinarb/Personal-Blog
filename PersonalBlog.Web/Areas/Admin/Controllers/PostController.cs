@@ -22,12 +22,14 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
         }
         public ActionResult Index(int pageid = 1, string search = "", string categorySlug = "")
         {
+            pageid = pageid < 1 ? 1 : pageid;
+
             var posts = _postService.GetPostByFilter(new PostFilterParams()
             {
                 PageId = pageid,
                 Search = search,
                 CategorySlug = categorySlug,
-                Take = 20
+                Take = 10
             });
             return View(posts);
         }
@@ -105,7 +107,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        
+
         public ActionResult Delete(int id)
         {
             var result = _postService.DeletePost(id);

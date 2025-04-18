@@ -72,13 +72,13 @@ public class PostService : IPostService
         var result = _context.Posts.Where(p => p.IsDelete == false).OrderByDescending(p => p.CreationDate).AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(param.CategorySlug))
-            result.Where(p => p.Category.Slug == param.CategorySlug);
+            result = result.Where(p => p.Category.Slug == param.CategorySlug);
 
         if (!string.IsNullOrWhiteSpace(param.Search))
-            result.Where(p => p.Title.Contains(param.Search));
+            result = result.Where(p => p.Title.Contains(param.Search));
 
         var skip = (param.PageId - 1) * param.Take;
-        var PageCount = result.Count() / param.Take;
+        var PageCount = result.Count() % param.Take == 0 ? result.Count() / param.Take : result.Count() / param.Take + 1;
 
         return new FilterPostDto()
         {

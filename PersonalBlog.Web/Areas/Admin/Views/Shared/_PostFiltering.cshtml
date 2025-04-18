@@ -1,0 +1,36 @@
+@using PersonalBlog.CoreLayer.DTOs.Posts
+@model FilterPostDto
+@using PersonalBlog.CoreLayer.Services.Categories
+@inject ICategoryService _categoryService
+@{
+    var categories = _categoryService.GetAllCategories();
+    var categorySlug = Model.filterParams.CategorySlug;
+}
+<div style="margin: 10px;grid-gap: 10px;display: flex;align-items: center;">
+    <label>جستجو</label>
+    <input type="text" value="@Model.filterParams.Search" name="search">
+
+    <label>دسته بندی</label>
+    <select name="categorySlug" >
+    <option value="">انتخاب کنید</option>
+    @foreach (var c in categories)
+    {
+        if (c.ParentId == 0)
+        {
+            <option value="@c.Slug" style="color: rgb(77, 77, 255);" selected="@(categorySlug == c.Slug ? "selected" : null)">
+                @c.Title
+            </option>
+            foreach (var s in categories)
+            {
+                if (s.ParentId == c.Id)
+                {
+                    <option value="@s.Slug" style="color: rgb(62, 203, 250);" selected="@(categorySlug ==s.Slug ? "selected" : null)">
+                        @s.Title</option>
+                }
+            }
+        }
+    }
+    </select>
+
+    <button type="submit" class="btn btn-info btn-sm">فیلتر</button>
+</div>

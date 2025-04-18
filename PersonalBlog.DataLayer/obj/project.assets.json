@@ -4739,11 +4739,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
+      "projectUniqueName": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
       "projectName": "PersonalBlog.DataLayer",
-      "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
+      "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
       "packagesPath": "C:\\Users\\sakht system\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\obj\\",
+      "outputPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sakht system\\AppData\\Roaming\\NuGet\\NuGet.Config"
