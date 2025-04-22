@@ -43,7 +43,7 @@
                         <tr>
                             <td>@count</td>
                             <td>@p.Title</td>
-                            <td><img style="width: 150px;" src="@Directories.ThumbSrc@p.Image"></td>
+                            <td><img style="width: 150px;" src="@Directories.GetThumbImg(p.Image)"></td>
                             <td></td>
                             <td>@p.Category.Title</td>
                             <td>
@@ -58,7 +58,6 @@
                 </tbody>
             </table>
             <partial name="_PaginationPost" model="@Model"/>
-
         </div>
     </div>
 </section>

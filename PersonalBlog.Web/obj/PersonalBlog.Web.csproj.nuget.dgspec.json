@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj": {}
+    "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj": {}
   },
   "projects": {
-    "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj": {
+    "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj",
+        "projectUniqueName": "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj",
         "projectName": "PersonalBlog.CoreLayer",
-        "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj",
+        "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj",
         "packagesPath": "C:\\Users\\sakht system\\.nuget\\packages\\",
-        "outputPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\obj\\",
+        "outputPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sakht system\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
-                "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj"
+              "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
+                "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
+    "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
+        "projectUniqueName": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
         "projectName": "PersonalBlog.DataLayer",
-        "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
+        "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj",
         "packagesPath": "C:\\Users\\sakht system\\.nuget\\packages\\",
-        "outputPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\obj\\",
+        "outputPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sakht system\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -146,14 +146,14 @@
         }
       }
     },
-    "e:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj": {
+    "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj",
+        "projectUniqueName": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
         "projectName": "PersonalBlog.Web",
-        "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj",
+        "projectPath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
         "packagesPath": "C:\\Users\\sakht system\\.nuget\\packages\\",
-        "outputPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\obj\\",
+        "outputPath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sakht system\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -168,11 +168,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj": {
-                "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj"
+              "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj": {
+                "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj"
               },
-              "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
-                "projectPath": "e:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj"
+              "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj": {
+                "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.DataLayer\\PersonalBlog.DataLayer.csproj"
               }
             }
           }

@@ -25,7 +25,7 @@ public class PostService : IPostService
         if (createPost.Image == null) return OperationResult.Error();
 
         var post = PostMapper.MapTo(createPost);
-        post.Image = _fileManager.SaveFile(createPost.Image, Directories.PostFile);
+        post.Image = _fileManager.SaveFile(createPost.Image, Directories.ThumbImg);
 
         _context.Posts.Add(post);
         _context.SaveChanges();
@@ -43,7 +43,7 @@ public class PostService : IPostService
         var newPost = PostMapper.MapTo(editPost, post);
         if (editPost.Image != null)
         {
-            newPost.Image = _fileManager.SaveFile(editPost.Image, Directories.PostFile);
+            newPost.Image = _fileManager.SaveFile(editPost.Image, Directories.ThumbImg);
         }
 
         _context.Posts.Update(newPost);
@@ -51,7 +51,7 @@ public class PostService : IPostService
 
         if (editPost.Image != null)
         {
-            _fileManager.DeleteFile(oldImg, Directories.PostFile);
+            _fileManager.DeleteFile(oldImg, Directories.ThumbImg);
         }
 
         return OperationResult.Success();
