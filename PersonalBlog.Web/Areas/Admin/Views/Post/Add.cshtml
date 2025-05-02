@@ -34,7 +34,7 @@
                             <option value="null">انتخاب کنید</option>
                             @foreach (var c in categories)
                             {
-                                if (c.ParentId == 0)
+                                if (c.ParentId == null)
                                 {
                                     <option value="@c.Id" style="color: rgb(77, 77, 255);">@c.Title</option>
                                     foreach (var s in categories)

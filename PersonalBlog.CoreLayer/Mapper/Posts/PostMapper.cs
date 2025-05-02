@@ -1,5 +1,6 @@
 using PersonalBlog.CoreLayer.DTOs.Posts;
 using PersonalBlog.CoreLayer.Mapper.Categories;
+using PersonalBlog.CoreLayer.Mapper.Users;
 using PersonalBlog.CoreLayer.Utilities;
 using PersonalBlog.DataLayer.Entities;
 
@@ -43,6 +44,7 @@ public static class PostMapper
             Title = p.Title,
             Image = p.Image,
             UserId = p.UserId,
+            User = UserMapper.MapTo(p.User),
             Description = p.Description,
             Visit = p.Visit
         };

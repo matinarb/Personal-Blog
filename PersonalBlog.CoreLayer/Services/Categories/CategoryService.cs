@@ -29,7 +29,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
         {
             var category = _context.Categories.AsNoTracking().FirstOrDefault(c => c.Id == editCategoryDto.Id);
             if (category == null) return OperationResult.NotFound();
-            var newCategory = CategoryMapper.MapTo(editCategoryDto,category);
+            var newCategory = CategoryMapper.MapTo(editCategoryDto, category);
 
             _context.Categories.Update(newCategory);
             _context.SaveChanges();
@@ -39,9 +39,9 @@ namespace PersonalBlog.CoreLayer.Services.Categories
 
         public OperationResult DeleteCategory(string slug)
         {
-            var category = _context.Categories.AsNoTracking().FirstOrDefault(c=>c.Slug==slug);
-            if(category==null) return OperationResult.NotFound();
-            category.IsDelete =true;
+            var category = _context.Categories.AsNoTracking().FirstOrDefault(c => c.Slug == slug);
+            if (category == null) return OperationResult.NotFound();
+            category.IsDelete = true;
             _context.Update(category);
             _context.SaveChanges();
             return OperationResult.Success();
@@ -49,13 +49,13 @@ namespace PersonalBlog.CoreLayer.Services.Categories
 
         public List<CategoriesDto> GetAllCategories()
         {
-            var categories = _context.Categories.AsNoTracking().Where(c => c.IsDelete == false).Select(c =>CategoryMapper.MapTo(c)).ToList();
+            var categories = _context.Categories.AsNoTracking().Where(c => c.IsDelete == false).Include(c => c.Parent).Select(c => CategoryMapper.MapTo(c)).ToList();
             return categories;
         }
 
         public CategoriesDto GetCategoryBy(int id)
         {
-            var category = _context.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _context.Categories.Include(c => c.Parent).FirstOrDefault(c => c.Id == id);
             if (category == null) return null;
             var categoryDto = CategoryMapper.MapTo(category);
             return categoryDto;
@@ -63,7 +63,7 @@ namespace PersonalBlog.CoreLayer.Services.Categories
 
         public CategoriesDto GetCategoryBy(string Slug)
         {
-            var category = _context.Categories.FirstOrDefault(c => c.Slug == Slug);
+            var category = _context.Categories.Include(c => c.Parent).FirstOrDefault(c => c.Slug == Slug);
             if (category == null) return null;
             var categoryDto = CategoryMapper.MapTo(category);
             return categoryDto;

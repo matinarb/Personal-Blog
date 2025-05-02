@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace PersonalBlog.DataLayer.Entities
@@ -13,10 +14,14 @@ namespace PersonalBlog.DataLayer.Entities
         public string Slug { get; set; }
         public string? MetaTag { get; set; }
         public string? MetaDescription { get; set; }
-        public int ParentId { get; set; }
+        
 
 
         #region relations
+        public int? ParentId { get; set; }
+
+        [ForeignKey("ParentId")]
+        public Category? Parent { get; set; }
         public ICollection<Post> posts { get; set; }
         #endregion
 

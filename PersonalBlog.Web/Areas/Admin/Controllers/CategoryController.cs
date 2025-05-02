@@ -26,7 +26,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
         [HttpPost("admin/Category/Add/{slug?}")]
         public IActionResult Add(string? slug,AddCategoryViewModel categoryViewModel)
         {
-            int parentid = _categoryService.GetCategoryBy(slug)?.Id ?? 0;
+            int? parentid = _categoryService.GetCategoryBy(slug)?.Id ?? null;
             if (!ModelState.IsValid) return View(categoryViewModel);
             var result = _categoryService.AddCategory(new AddCategoryDto()
             {

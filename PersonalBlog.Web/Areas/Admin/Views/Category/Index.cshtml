@@ -31,7 +31,7 @@
                 </thead>
                 <tbody>
 
-                    @foreach(var category in Model.Where(c=>c.ParentId==0 ))
+                    @foreach(var category in Model.Where(c=>c.ParentId==null ))
                     {
                         <tr>
                             <td>@category.Id</td>

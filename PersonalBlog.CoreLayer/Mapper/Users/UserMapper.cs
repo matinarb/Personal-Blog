@@ -1,0 +1,17 @@
+using PersonalBlog.CoreLayer.DTOs.Users;
+using PersonalBlog.DataLayer.Entities;
+
+namespace PersonalBlog.CoreLayer.Mapper.Users;
+
+public static class UserMapper{
+    public static UserDto MapTo(User user){
+        return new UserDto(){
+            CreationDate = user.CreationDate,
+            FullName = user.FullName,
+            Password = user.Password,
+            Role = user.Role,
+            UserId = user.Id,
+            UserName = user.UserName
+        };
+    }
+}

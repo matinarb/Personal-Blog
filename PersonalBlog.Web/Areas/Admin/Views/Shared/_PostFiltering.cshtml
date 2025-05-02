@@ -15,7 +15,7 @@
     <option value="">انتخاب کنید</option>
     @foreach (var c in categories)
     {
-        if (c.ParentId == 0)
+        if (c.ParentId == null)
         {
             <option value="@c.Slug" style="color: rgb(77, 77, 255);" selected="@(categorySlug == c.Slug ? "selected" : null)">
                 @c.Title

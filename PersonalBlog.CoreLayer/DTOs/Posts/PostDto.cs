@@ -1,4 +1,5 @@
 using PersonalBlog.CoreLayer.DTOs.Categories;
+using PersonalBlog.CoreLayer.DTOs.Users;
 
 namespace PersonalBlog.CoreLayer.DTOs.Posts;
 
@@ -13,6 +14,7 @@ public class PostDto
     public string Description { get; set; }
     public DateTime CreationDate { get; set; }
     public CategoriesDto Category { get; set; }
+    public UserDto User { get; set; }
     public int Visit { get; set; }
     
 }

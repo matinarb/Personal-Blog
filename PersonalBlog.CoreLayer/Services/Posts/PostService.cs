@@ -84,13 +84,19 @@ public class PostService : IPostService
         {
             PageCount = PageCount,
             filterParams = param,
-            posts = result.Skip(skip).Take(param.Take).Include(p => p.Category).Select(p => PostMapper.Mapto(p)).ToList()
+            posts = result.Skip(skip).Take(param.Take).Include(p => p.Category)
+                                                      .Include(p=>p.Category.Parent)
+                                                      .Include(p=>p.User)
+                                                      .Select(p => PostMapper.Mapto(p)).ToList()
         };
     }
 
     public PostDto GetPostBy(string slug)
     {
-        var post = _context.Posts.AsNoTracking().Include(p => p.Category).FirstOrDefault(p => p.Slug == slug && p.IsDelete == false);
+        var post = _context.Posts.AsNoTracking().Include(p => p.Category)
+                                                .Include(p=>p.Category.Parent)
+                                                .Include(p=>p.User)
+                                                .FirstOrDefault(p => p.Slug == slug && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
 
@@ -98,7 +104,10 @@ public class PostService : IPostService
 
     public PostDto GetPostBy(int id)
     {
-        var post = _context.Posts.AsNoTracking().Include(p => p.Category).FirstOrDefault(p => p.Id == id && p.IsDelete == false);
+        var post = _context.Posts.AsNoTracking().Include(p => p.Category)
+                                                .Include(p=>p.Category.Parent)
+                                                .Include(p=>p.User)
+                                                .FirstOrDefault(p => p.Id == id && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
     }

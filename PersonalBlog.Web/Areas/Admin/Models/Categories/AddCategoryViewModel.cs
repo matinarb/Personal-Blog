@@ -5,7 +5,7 @@ namespace PersonalBlog.Web.Areas.Admin.Models.Categories;
 
 public class AddCategoryViewModel
 {
-    public int ParentId { get; set; }
+    public int? ParentId { get; set; }
     [Display(Name ="نام دسته بندی")]
     [Required(ErrorMessage ="لطفا {0} را وارد کنید")]
     public string Title { get; set; }

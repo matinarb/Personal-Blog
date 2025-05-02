@@ -11,8 +11,5 @@ namespace PersonalBlog.CoreLayer.DTOs.Users
         public UserRole Role { get; set; }
         public DateTime CreationDate { get; set; }
         
-        
-
-
     }
 }

@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using PersonalBlog.CoreLayer.DTOs.Categories;
 using PersonalBlog.CoreLayer.Utilities;
 using PersonalBlog.DataLayer.Entities;
@@ -33,6 +34,7 @@ public static class CategoryMapper
 
     public static CategoriesDto MapTo(Category c)
     {
+        if(c==null) return null;
         return new CategoriesDto()
         {
             Id = c.Id,
@@ -41,6 +43,7 @@ public static class CategoryMapper
             Slug = c.Slug,
             MetaTag = c.MetaTag,
             MetaDescription = c.MetaDescription,
+            Parent = CategoryMapper.MapTo(c.Parent)
         };
     }
 }
