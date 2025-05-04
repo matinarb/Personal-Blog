@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj": {}
+    "E:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj": {}
   },
   "projects": {
     "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj": {
@@ -146,14 +146,14 @@
         }
       }
     },
-    "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj": {
+    "E:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
+        "projectUniqueName": "E:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj",
         "projectName": "PersonalBlog.Web",
-        "projectPath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
+        "projectPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\PersonalBlog.Web.csproj",
         "packagesPath": "C:\\Users\\sakht system\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\obj\\",
+        "outputPath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sakht system\\AppData\\Roaming\\NuGet\\NuGet.Config"

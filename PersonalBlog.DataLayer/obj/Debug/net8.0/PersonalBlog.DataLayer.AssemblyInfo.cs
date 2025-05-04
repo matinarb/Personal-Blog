@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonalBlog.DataLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c166ecccae83c5e8cf3cdd4d1fcffc7ffe656922")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d164108dcf667d13beab980c2d24a0fdd4d02b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonalBlog.DataLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonalBlog.DataLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

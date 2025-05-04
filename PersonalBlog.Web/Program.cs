@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using PersonalBlog.CoreLayer.Services.Categories;
+using PersonalBlog.CoreLayer.Services.Comment;
 using PersonalBlog.CoreLayer.Services.FileManager;
 using PersonalBlog.CoreLayer.Services.Posts;
 using PersonalBlog.CoreLayer.Services.Users;
@@ -18,6 +19,8 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IPostService,PostService>();
 builder.Services.AddTransient<IFileManager, FileManager>();
+builder.Services.AddTransient<ICommentService, CommentService>();
+
 
 var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<BlogContext>(options => options.UseSqlServer(connectionString));

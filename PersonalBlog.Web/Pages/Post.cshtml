@@ -15,8 +15,7 @@
         @if (parent != null)
         {
             <li class="breadcrumbs__item">
-                <a href="index.html" class="breadcrumbs__url">@parent.Title</a>
-
+                <a href="#" class="breadcrumbs__url">@parent.Title</a>
             </li>
         }
         <li class="breadcrumbs__item breadcrumbs__item--current">
@@ -200,102 +199,56 @@
                 <!-- Comments -->
                 <div class="entry-comments">
                     <div class="title-wrap title-wrap--line">
-                        <h3 class="section-title">۳ دیدگاه</h3>
+                        <h3 class="section-title">@Model.Comments.Count دیدگاه</h3>
                     </div>
                     <ul class="comment-list">
-                        <li class="comment">
-                            <div class="comment-body">
-                                <div class="comment-avatar">
-                                    <img alt="" src="img/default-avatar.png">
-                                </div>
-                                <div class="comment-text">
-                                    <h6 class="comment-author">بهرامی راد</h6>
-                                    <div class="comment-metadata">
-                                        <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
-                                    </div>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                                    </p>
-                                    <a href="#" class="comment-reply">پاسخ</a>
-                                </div>
-                            </div>
 
-                            <ul class="children">
-                                <li class="comment">
-                                    <div class="comment-body">
-                                        <div class="comment-avatar">
-                                            <img alt="" src="img/default-avatar.png">
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <li>
+                                <div class="comment-body">
+                                    <div class="comment-avatar">
+                                        <img alt="" src="img/default-avatar.png">
+                                    </div>
+                                    <div class="comment-text">
+                                        <h6 class="comment-author">@comment.User.FullName</h6>
+                                        <div class="comment-metadata">
+                                            <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
                                         </div>
-                                        <div class="comment-text">
-                                            <h6 class="comment-author">حامد</h6>
-                                            <div class="comment-metadata">
-                                                <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
-                                            </div>
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است.</p>
-                                            <a href="#" class="comment-reply">پاسخ</a>
-                                        </div>
+                                        <p>@comment.Text</p>
+                                        <a href="#" class="comment-reply">پاسخ</a>
                                     </div>
-                                </li> <!-- end reply comment -->
-                            </ul>
-
-                        </li> <!-- end 1-2 comment -->
-
-                        <li>
-                            <div class="comment-body">
-                                <div class="comment-avatar">
-                                    <img alt="" src="img/default-avatar.png">
                                 </div>
-                                <div class="comment-text">
-                                    <h6 class="comment-author">علی</h6>
-                                    <div class="comment-metadata">
-                                        <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
-                                    </div>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                                    </p>
-                                    <a href="#" class="comment-reply">پاسخ</a>
-                                </div>
-                            </div>
-                        </li> <!-- end 3 comment -->
+                            </li>
+                        }
 
                     </ul>
                 </div> <!-- end comments -->
-
-                <!-- Comment Form -->
-                <div id="respond" class="comment-respond">
-                    <div class="title-wrap">
-                        <h5 class="comment-respond__title section-title">دیدگاه شما</h5>
-                    </div>
-                    <form id="form" class="comment-form" method="post" action="#">
-                        <p class="comment-form-comment">
-                            <label for="comment">دیدگاه</label>
-                            <textarea id="comment" name="comment" rows="5" required="required"></textarea>
-                        </p>
-
-                        <div class="row row-20">
-                            <div class="col-lg-4">
-                                <label for="name">نام: *</label>
-                                <input name="name" id="name" type="text">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="comment">ایمیل: *</label>
-                                <input name="email" id="email" type="email">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="comment">وبسایت:</label>
-                                <input name="website" id="website" type="text">
-                            </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <!-- Comment Form -->
+                    <div id="respond" class="comment-respond">
+                        <div class="title-wrap">
+                            <h5 class="comment-respond__title section-title">دیدگاه شما</h5>
                         </div>
+                        <form class="comment-form" method="post">
+                            <input type="hidden" asp-for="PostId" value="@Model.Post.PostId">
+                            <p class="comment-form-comment">
+                                <label asp-for="Text">دیدگاه</label>
+                                <textarea asp-for="Text" rows="5"></textarea>
+                                <span asp-validation-for="Text"></span>
+                            </p>
+                            <p class="comment-form-submit">
+                                <input type="submit" class="btn btn-lg btn-color btn-button" value="ارسال دیدگاه"
+                                    id="submit-message">
+                            </p>
+                        </form>
+                    </div> <!-- end comment form -->
+                }
+                else{
+                    <div class="alert alert-danger">لطفا برای ثبت دیدگاه ثبت نلم کنید</div>
+                }
 
-                        <p class="comment-form-submit">
-                            <input type="submit" class="btn btn-lg btn-color btn-button" value="ارسال دیدگاه"
-                                id="submit-message">
-                        </p>
-
-                    </form>
-                </div> <!-- end comment form -->
 
             </div> <!-- end content box -->
         </div> <!-- end post content -->
