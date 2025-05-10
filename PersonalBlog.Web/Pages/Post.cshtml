@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{slug}"
 @using PersonalBlog.CoreLayer.Utilities
 @model MyApp.Namespace.PostModel
 @{
@@ -104,95 +104,34 @@
                         </div> <!-- end entry article -->
                     </div> <!-- end entry article wrap -->
 
-                    <!-- Author -->
-                    <div class="entry-author clearfix">
-                        <img alt="" data-src="img/default-avatar.png" src="img/empty.png" class="avatar lazyload">
-                        <div class="entry-author__info">
-                            <h6 class="entry-author__name">
-                                <a href="#">جلال بهرامی راد</a>
-                            </h6>
-                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                باشد.</p>
-                        </div>
-                    </div>
+                    @if (Model.RelatedPosts.Any())
+                    {
+                        <!-- Related Posts -->
+                        <section class="section related-posts mt-40 mb-0">
+                            <div class="title-wrap title-wrap--line">
+                                <h3 class="section-title">مطالب مرتبط</h3>
+                            </div>
 
-                    <!-- Related Posts -->
-                    <section class="section related-posts mt-40 mb-0">
-                        <div class="title-wrap title-wrap--line">
-                            <h3 class="section-title">مطالب مرتبط</h3>
-                        </div>
-
-                        <!-- Slider -->
-                        <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
-                            <article class="entry thumb thumb--size-1">
-                                <div class="entry__img-holder thumb__img-holder"
-                                    style="background-image: url('img/content/thumb/post-8.jpg');">
-                                    <div class="bottom-gradient"></div>
-                                    <div class="thumb-text-holder">
-                                        <h2 class="thumb-entry-title">
-                                            <a href="single-post.html">گوشی تاشو هواوی میت ایکس در تاریخ مقرر عرضه
-                                                می‌شود</a>
-                                        </h2>
-                                    </div>
-                                    <a href="single-post.html" class="thumb-url"></a>
-                                </div>
-                            </article>
-                            <article class="entry thumb thumb--size-1">
-                                <div class="entry__img-holder thumb__img-holder"
-                                    style="background-image: url('img/content/thumb/post-2-2.jpg');">
-                                    <div class="bottom-gradient"></div>
-                                    <div class="thumb-text-holder">
-                                        <h2 class="thumb-entry-title">
-                                            <a href="single-post.html">نمایشگر وان پلاس ۷ قرار است ما را شگفت‌زده
-                                                کند!</a>
-                                        </h2>
-                                    </div>
-                                    <a href="single-post.html" class="thumb-url"></a>
-                                </div>
-                            </article>
-                            <article class="entry thumb thumb--size-1">
-                                <div class="entry__img-holder thumb__img-holder"
-                                    style="background-image: url('img/content/thumb/post-9.jpg');">
-                                    <div class="bottom-gradient"></div>
-                                    <div class="thumb-text-holder">
-                                        <h2 class="thumb-entry-title">
-                                            <a href="single-post.html">بهترین کتاب‌های کودک و نوجوان برای تربیت فرزندان
-                                                موفق</a>
-                                        </h2>
-                                    </div>
-                                    <a href="single-post.html" class="thumb-url"></a>
-                                </div>
-                            </article>
-                            <article class="entry thumb thumb--size-1">
-                                <div class="entry__img-holder thumb__img-holder"
-                                    style="background-image: url('img/content/thumb/post-7.jpg');">
-                                    <div class="bottom-gradient"></div>
-                                    <div class="thumb-text-holder">
-                                        <h2 class="thumb-entry-title">
-                                            <a href="single-post.html">جعبه‌گشایی هواوی P30 لایت در دیجی‌کالا مگ</a>
-                                        </h2>
-                                    </div>
-                                    <a href="single-post.html" class="thumb-url"></a>
-                                </div>
-                            </article>
-                            <article class="entry thumb thumb--size-1">
-                                <div class="entry__img-holder thumb__img-holder"
-                                    style="background-image: url('img/content/thumb/post-5.jpg');">
-                                    <div class="bottom-gradient"></div>
-                                    <div class="thumb-text-holder">
-                                        <h2 class="thumb-entry-title">
-                                            <a href="single-post.html">۵ کتاب روانشناسی که برای زندگی بهتر باید
-                                                بخوانید</a>
-                                        </h2>
-                                    </div>
-                                    <a href="single-post.html" class="thumb-url"></a>
-                                </div>
-                            </article>
-                        </div> <!-- end slider -->
-
-                    </section> <!-- end related posts -->
+                            <!-- Slider -->
+                            <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
+                                @foreach (var post in Model.RelatedPosts)
+                                {
+                                    <article class="entry thumb thumb--size-1">
+                                        <div class="entry__img-holder thumb__img-holder"
+                                            style="background-image: url('@Directories.GetThumbImg(post.Image)');">
+                                            <div class="bottom-gradient"></div>
+                                            <div class="thumb-text-holder">
+                                                <h2 class="thumb-entry-title">
+                                                    <a asp-page="Post" asp-route-slug="@post.Slug">@post.Title</a>
+                                                </h2>
+                                            </div>
+                                            <a asp-page="Post" asp-route-slug="@post.Slug" class="thumb-url"></a>
+                                        </div>
+                                    </article>
+                                }
+                            </div> <!-- end slider -->
+                        </section> <!-- end related posts -->
+                    }
 
                 </article> <!-- end standard post -->
 
@@ -245,7 +184,8 @@
                         </form>
                     </div> <!-- end comment form -->
                 }
-                else{
+                else
+                {
                     <div class="alert alert-danger">لطفا برای ثبت دیدگاه ثبت نلم کنید</div>
                 }
 
@@ -257,115 +197,8 @@
         <aside class="col-lg-4 sidebar sidebar--right">
 
             <!-- Widget Popular Posts -->
-            <aside class="widget widget-popular-posts">
-                <h4 class="widget-title">محبوب ترین مقالات</h4>
-                <ul class="post-list-small">
-                    <li class="post-list-small__item">
-                        <article class="post-list-small__entry clearfix">
-                            <div class="post-list-small__img-holder">
-                                <div class="thumb-container thumb-100">
-                                    <a href="single-post.html">
-                                        <img data-src="img/content/thumb/post-8.jpg" src="img/empty.png" alt=""
-                                            class="post-list-small__img--rounded lazyload">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-list-small__body">
-                                <h3 class="post-list-small__entry-title">
-                                    <a href="single-post.html">گوشی تاشو هواوی میت ایکس در تاریخ مقرر عرضه می‌شود</a>
-                                </h3>
-                                <ul class="entry__meta">
-                                    <li class="entry__meta-author">
-                                        <span>نویسنده:</span>
-                                        <a href="#">بهرامی راد</a>
-                                    </li>
-                                    <li class="entry__meta-date">
-                                        ۴ اردیبهشت ۱۳۹۸
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="post-list-small__item">
-                        <article class="post-list-small__entry clearfix">
-                            <div class="post-list-small__img-holder">
-                                <div class="thumb-container thumb-100">
-                                    <a href="single-post.html">
-                                        <img data-src="img/content/thumb/post-2.jpg" src="img/empty.png" alt=""
-                                            class="post-list-small__img--rounded lazyload">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-list-small__body">
-                                <h3 class="post-list-small__entry-title">
-                                    <a href="single-post.html">نمایشگر وان پلاس ۷ قرار است ما را شگفت‌زده کند!</a>
-                                </h3>
-                                <ul class="entry__meta">
-                                    <li class="entry__meta-author">
-                                        <span>نویسنده:</span>
-                                        <a href="#">بهرامی راد</a>
-                                    </li>
-                                    <li class="entry__meta-date">
-                                        ۴ اردیبهشت ۱۳۹۸
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="post-list-small__item">
-                        <article class="post-list-small__entry clearfix">
-                            <div class="post-list-small__img-holder">
-                                <div class="thumb-container thumb-100">
-                                    <a href="single-post.html">
-                                        <img data-src="img/content/thumb/post-6.jpg" src="img/empty.png" alt=""
-                                            class="post-list-small__img--rounded lazyload">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-list-small__body">
-                                <h3 class="post-list-small__entry-title">
-                                    <a href="single-post.html">چرا لانچرهای اندروید دیگر محبوبیت گذشته را ندارند؟</a>
-                                </h3>
-                                <ul class="entry__meta">
-                                    <li class="entry__meta-author">
-                                        <span>نویسنده:</span>
-                                        <a href="#">بهرامی راد</a>
-                                    </li>
-                                    <li class="entry__meta-date">
-                                        ۴ اردیبهشت ۱۳۹۸
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="post-list-small__item">
-                        <article class="post-list-small__entry clearfix">
-                            <div class="post-list-small__img-holder">
-                                <div class="thumb-container thumb-100">
-                                    <a href="single-post.html">
-                                        <img data-src="img/content/thumb/post-5.jpg" src="img/empty.png" alt=""
-                                            class="post-list-small__img--rounded lazyload">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-list-small__body">
-                                <h3 class="post-list-small__entry-title">
-                                    <a href="single-post.html">۵ کتاب روانشناسی که برای زندگی بهتر باید بخوانید</a>
-                                </h3>
-                                <ul class="entry__meta">
-                                    <li class="entry__meta-author">
-                                        <span>نویسنده:</span>
-                                        <a href="#">بهرامی راد</a>
-                                    </li>
-                                    <li class="entry__meta-date">
-                                        ۴ اردیبهشت ۱۳۹۸
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </aside> <!-- end widget popular posts -->
+            <partial name="_PopularPosts" />
+            <!-- end widget popular posts -->
 
             <!-- Widget Newsletter -->
             <aside class="widget widget_mc4wp_form_widget">

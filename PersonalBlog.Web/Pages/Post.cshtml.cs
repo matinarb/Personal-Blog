@@ -17,7 +17,8 @@ namespace MyApp.Namespace
         private readonly IPostService _postService = postService;
 
         public required PostDto Post { get; set; }
-        public required List<CommentDto>? Comments { get; set; }
+        public List<CommentDto>? Comments { get; set; }
+        public List<PostDto> RelatedPosts { get; set; }
 
         [BindProperty]
         [Display(Name ="دیدگاه")]
@@ -35,7 +36,7 @@ namespace MyApp.Namespace
             Post = _postService.GetPostBy(slug);
             if (Post == null) return NotFound();
             Comments = _commentService.GetComments(Post.PostId);
-            
+            RelatedPosts = _postService.GetRelatedPosts(Post.PostId);
             return Page();
         }
         public IActionResult OnPost(string slug = "")
@@ -47,6 +48,7 @@ namespace MyApp.Namespace
             {
                 Post = _postService.GetPostBy(slug);
                 Comments = _commentService.GetComments(Post.PostId);
+                RelatedPosts = _postService.GetRelatedPosts(Post.PostId);
                 return Page();
             }
 

@@ -13,8 +13,8 @@ public class PostDto
     public string Slug { get; set; }
     public string Description { get; set; }
     public DateTime CreationDate { get; set; }
-    public CategoriesDto Category { get; set; }
-    public UserDto User { get; set; }
+    public CategoriesDto? Category { get; set; }
+    public UserDto? User { get; set; }
     public int Visit { get; set; }
     
 }

@@ -118,4 +118,21 @@ public class PostService : IPostService
         return _context.Posts.Any(p => p.Slug == slug.toSlug());
     }
 
+    public List<PostDto> GetRelatedPosts(int postId)
+    {
+        var post = _context.Posts.FirstOrDefault(p=>p.Id==postId&&p.IsDelete==false);
+        if(post==null) return null;
+
+        var posts = _context.Posts.Where(p=>p.CategoryId==post.CategoryId&&p.IsDelete==false).OrderByDescending(p=>p.CreationDate).Take(6)
+                                                                          .Select(p=>PostMapper.Mapto(p)).ToList();
+        return posts;
+    }
+
+    public List<PostDto> GetPopularPosts()
+    {
+        var posts = _context.Posts.Where(p=>p.IsDelete==false).OrderByDescending(p=>p.Visit).Take(4)
+                                                              .Include(p=>p.User)
+                                                              .Select(p=>PostMapper.Mapto(p)).ToList();
+        return posts;
+    }
 }

@@ -12272,6 +12272,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\content\thumb\e68e5bef-38b5-44db-b4aa-f6f0138652ac23672.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\content\thumb\f13fd913-e89c-45e6-afc1-9b5477771f5d4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PersonalBlog.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PersonalBlog.Web</BasePath>
+      <RelativePath>img/content/thumb/f13fd913-e89c-45e6-afc1-9b5477771f5d4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\content\thumb\f13fd913-e89c-45e6-afc1-9b5477771f5d4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\content\thumb\post-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PersonalBlog.Web</SourceId>

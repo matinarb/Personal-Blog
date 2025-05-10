@@ -11,5 +11,7 @@ public interface IPostService
     FilterPostDto GetPostByFilter(PostFilterParams param);
     PostDto GetPostBy(string slug);
     PostDto GetPostBy(int id);
+    List<PostDto> GetRelatedPosts(int postId);
+    List<PostDto> GetPopularPosts();
     bool IsValidSlug(string slug);
 }
