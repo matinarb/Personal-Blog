@@ -14,4 +14,5 @@ public interface IPostService
     List<PostDto> GetRelatedPosts(int postId);
     List<PostDto> GetPopularPosts();
     bool IsValidSlug(string slug);
+    void RaiseVisit(int postId);
 }

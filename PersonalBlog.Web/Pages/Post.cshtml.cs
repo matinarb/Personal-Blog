@@ -28,7 +28,7 @@ namespace MyApp.Namespace
         [Required]
         public int  PostId{ get; set; }
 
-
+        
 
         public IActionResult OnGet(string slug = "")
         {
@@ -37,6 +37,7 @@ namespace MyApp.Namespace
             if (Post == null) return NotFound();
             Comments = _commentService.GetComments(Post.PostId);
             RelatedPosts = _postService.GetRelatedPosts(Post.PostId);
+            _postService.RaiseVisit(Post.PostId);
             return Page();
         }
         public IActionResult OnPost(string slug = "")

@@ -93,10 +93,10 @@ public class PostService : IPostService
 
     public PostDto GetPostBy(string slug)
     {
-        var post = _context.Posts.AsNoTracking().Include(p => p.Category)
-                                                .Include(p=>p.Category.Parent)
-                                                .Include(p=>p.User)
-                                                .FirstOrDefault(p => p.Slug == slug && p.IsDelete == false);
+        var post = _context.Posts.Include(p => p.Category)
+                                 .Include(p=>p.Category.Parent)
+                                 .Include(p=>p.User)
+                                 .FirstOrDefault(p => p.Slug == slug && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
 
@@ -104,10 +104,10 @@ public class PostService : IPostService
 
     public PostDto GetPostBy(int id)
     {
-        var post = _context.Posts.AsNoTracking().Include(p => p.Category)
-                                                .Include(p=>p.Category.Parent)
-                                                .Include(p=>p.User)
-                                                .FirstOrDefault(p => p.Id == id && p.IsDelete == false);
+        var post = _context.Posts.Include(p => p.Category)
+                                 .Include(p=>p.Category.Parent)
+                                 .Include(p=>p.User)
+                                 .FirstOrDefault(p => p.Id == id && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
     }
@@ -134,5 +134,12 @@ public class PostService : IPostService
                                                               .Include(p=>p.User)
                                                               .Select(p=>PostMapper.Mapto(p)).ToList();
         return posts;
+    }
+
+    public void RaiseVisit(int postId)
+    {
+        var post = _context.Posts.First(p=>p.Id==postId);
+        post.Visit += 1;
+        _context.SaveChanges();
     }
 }

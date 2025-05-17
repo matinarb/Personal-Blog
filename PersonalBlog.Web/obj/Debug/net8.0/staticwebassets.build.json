@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1cDw7EK3V6og4RjF5uSWu2e+NhYLWrvfD7I3l+6gKqg=",
+  "Hash": "/ek+y1eQVRhiVKLKP0keWzO5zeOmSgqoX2R9wUThVaA=",
   "Source": "PersonalBlog.Web",
   "BasePath": "_content/PersonalBlog.Web",
   "Mode": "Default",
@@ -14550,6 +14550,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\626cad24-9cd2-4391-8fd3-74b2475bdbce5.jpg"
+    },
+    {
+      "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\87be7b99-34b7-4e8d-b220-6c29a9047843e29613fd-da2a-408f-91ef-12df843ec5d5.webp",
+      "SourceId": "PersonalBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\",
+      "BasePath": "_content/PersonalBlog.Web",
+      "RelativePath": "img/content/thumb/87be7b99-34b7-4e8d-b220-6c29a9047843e29613fd-da2a-408f-91ef-12df843ec5d5.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\content\\thumb\\87be7b99-34b7-4e8d-b220-6c29a9047843e29613fd-da2a-408f-91ef-12df843ec5d5.webp"
     },
     {
       "Identity": "E:\\GitHub\\Personal-Blog\\personalblog.web\\wwwroot\\img\\content\\thumb\\e05f8764-f699-4c59-9173-6fade84b87d81.jpg",
