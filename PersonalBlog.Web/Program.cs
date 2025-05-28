@@ -21,10 +21,11 @@ builder.Services.AddTransient<IPostService,PostService>();
 builder.Services.AddTransient<IFileManager, FileManager>();
 builder.Services.AddTransient<ICommentService, CommentService>();
 
-
+// DataBase
 var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<BlogContext>(options => options.UseSqlServer(connectionString));
 
+// Authentication
 builder.Services.AddAuthentication(option =>
 {
     option.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
