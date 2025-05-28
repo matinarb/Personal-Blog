@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3pPyx151TKc=",
+  "dgSpecHash": "oOQFTT8vPn0=",
   "success": true,
   "projectFilePath": "E:\\GitHub\\Personal-Blog\\PersonalBlog.CoreLayer\\PersonalBlog.CoreLayer.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,10 @@
     "C:\\Users\\sakht system\\.nuget\\packages\\system.text.encodings.web\\9.0.1\\system.text.encodings.web.9.0.1.nupkg.sha512",
     "C:\\Users\\sakht system\\.nuget\\packages\\system.text.json\\9.0.1\\system.text.json.9.0.1.nupkg.sha512",
     "C:\\Users\\sakht system\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\sakht system\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\sakht system\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\sakht system\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\sakht system\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\sakht system\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }

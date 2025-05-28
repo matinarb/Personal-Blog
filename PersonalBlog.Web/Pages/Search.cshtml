@@ -1,0 +1,44 @@
+﻿@page
+@using PersonalBlog.CoreLayer.Utilities
+@model MyApp.Namespace.SearchModel
+@{
+    ViewData["Title"] = Model.Filter.filterParams.Search;
+
+}
+
+<div class="main-container container pt-40" id="main-container">
+
+    <!-- Content -->
+    <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content mb-72">
+            <h1 class="page-title">نتایج جستجو برای: @Model.Filter.filterParams.Search</h1>
+            <div id="posts">
+                <partial name="_Pagination" model="@Model.Filter" />
+            </div>
+
+
+        </div>
+        <!-- end posts -->
+
+        <!-- Sidebar -->
+        <partial name="_SideBar" />
+        <!-- end sidebar -->
+
+    </div> <!-- end content -->
+</div> <!-- end main container -->
+
+@section script {
+    <script>
+        function Pagination(i,q,s) {
+            $.ajax({
+                url: `/Search?pageId=${i}&search=${q}&categorySlug=${s}&handler=Pagination`,
+                type: 'GET'
+            })
+                .done(function (data) {
+                    document.getElementById("posts").innerHTML = data;
+                })
+        }
+    </script>
+}

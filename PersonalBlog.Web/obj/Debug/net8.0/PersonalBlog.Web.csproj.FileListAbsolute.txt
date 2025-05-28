@@ -157,11 +157,6 @@ E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.Razor
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.sourcelink.json
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets.build.json
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets.development.json
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets\msbuild.PersonalBlog.Web.Microsoft.AspNetCore.StaticWebAssets.props
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets\msbuild.build.PersonalBlog.Web.props
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PersonalBlog.Web.props
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PersonalBlog.Web.props
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\staticwebassets.pack.json
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\scopedcss\bundle\PersonalBlog.Web.styles.css
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\Personal.E6FB6710.Up2Date
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.dll
@@ -169,3 +164,6 @@ E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\refint\PersonalBlog.We
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.pdb
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.genruntimeconfig.cache
 E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\ref\PersonalBlog.Web.dll
+E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.staticwebassets.endpoints.json
+E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.endpoints.json

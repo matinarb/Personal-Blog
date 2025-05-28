@@ -65,7 +65,6 @@ namespace PersonalBlog.Web.Pages
 
             return RedirectToPage("Index");
 
-
         }
     }
 }

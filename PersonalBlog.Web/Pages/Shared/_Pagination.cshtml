@@ -1,0 +1,63 @@
+@model FilterPostDto
+@using PersonalBlog.CoreLayer.DTOs.Posts
+@using PersonalBlog.CoreLayer.Utilities
+@{
+    int currentPage = Model.filterParams.PageId;
+    int nextPage = currentPage + 1;
+}
+
+@foreach (var post in Model.posts)
+{
+    <article class="entry card post-list">
+        <div class="entry__img-holder post-list__img-holder card__img-holder"
+            style="background-image: url(@Directories.GetThumbImg(post.Image))">
+            <a asp-page="Post" asp-route-slug="@post.Slug" class="thumb-url"></a>
+            <img src="@Directories.GetThumbImg(post.Image)" alt="" class="entry__img d-none">
+            <a asp-page="Search" asp-route-categorySlug="@post.Category?.Slug"
+                class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--blue">
+                @post.Category?.Title
+            </a>
+        </div>
+
+        <div class="entry__body post-list__body card__body">
+            <div class="entry__header">
+                <h2 class="entry__title">
+                    <a asp-page="Post" asp-route-slug="@post.Slug">@post.Title</a>
+                </h2>
+                <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                        <span>نویسنده:</span>
+                        <a href="#">@post.User?.FullName</a>
+                    </li>
+                    <li class="entry__meta-date">
+                        @post.CreationDate
+                    </li>
+                </ul>
+            </div>
+            <div class="entry__excerpt">
+                <p>عد از اعلام تصمیم سامسونگ برای به عقب انداختن عرضه گلکسی فولد، شایعاتی مبنی بر احتمال تاخیر
+                    در عرضه ...</p>
+            </div>
+        </div>
+    </article>
+
+}
+
+
+<!-- Pagination -->
+<nav class="pagination">
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (i == currentPage)
+        {
+            <span class="pagination__page pagination__page--current">@i</span>
+        }
+        else
+        {
+            <a href="#top" onclick="Pagination(@i,'@Model.filterParams.Search','@Model.filterParams.CategorySlug')"
+                class="pagination__page">@i</a>
+        }
+    }
+    <a href="#top" onclick="Pagination(@nextPage,'@Model.filterParams.Search','@Model.filterParams.CategorySlug')"
+        class="pagination__page pagination__icon pagination__page--next"><i class="ui-arrow-left"></i></a>
+</nav>
