@@ -51,6 +51,14 @@
           }
         }
       },
+      "HtmlAgilityPack/1.12.1": {
+        "runtime": {
+          "lib/net8.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.12.1.0",
+            "fileVersion": "1.12.1.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -1041,6 +1049,7 @@
       },
       "PersonalBlog.CoreLayer/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.12.1",
           "PersonalBlog.DataLayer": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
@@ -1084,6 +1093,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SP6/2Y26CXtxjXn0Wwsom9Ek35SNWKHEu/IWhNEFejBSSVWWXPRSlpqpBSYWv1SQhYFnwMO01xVbEdK3iRR4hg==",
+      "path": "htmlagilitypack/1.12.1",
+      "hashPath": "htmlagilitypack.1.12.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

@@ -1,0 +1,69 @@
+@using PersonalBlog.CoreLayer.Utilities
+@using PersonalBlog.CoreLayer.DTOs.Posts
+@model FilterPostDto
+@{
+    int currentPage = Model.filterParams.PageId;
+    int nextPage = currentPage + 1;
+}
+
+
+<h1 class="page-title">@ViewData["category"]</h1>
+
+<div class="row card-row">
+    @foreach (var post in Model.posts)
+    {
+        <div class="col-md-6">
+            <article class="entry card">
+                <div class="entry__img-holder card__img-holder">
+                    <a asp-page="Post" asp-route-slug="@post.Slug">
+                        <div class="thumb-container thumb-70">
+                            <img data-src="@Directories.GetThumbImg(post.Image)" src=""
+                                class="entry__img lazyload" alt="@post.Title" />
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--green">@post.Category?.Title</a>
+                </div>
+
+                <div class="entry__body card__body">
+                    <div class="entry__header">
+
+                        <h2 class="entry__title">
+                            <a asp-page="Post" asp-route-slug="@post.Slug">@post.Title</a>
+                        </h2>
+                        <ul class="entry__meta">
+                            <li class="entry__meta-author">
+                                <span>نویسنده:</span>
+                                <a href="#">@post.User?.FullName</a>
+                            </li>
+                            <li class="entry__meta-date">
+                                @post.CreationDate
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="entry__excerpt">
+                        <p>@String.Join(" ", post.Description.HtmltoText().Split(" ").Take(25))...</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    }
+
+</div>
+
+<!-- Pagination -->
+<nav class="pagination">
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (i == currentPage)
+        {
+            <span class="pagination__page pagination__page--current">@i</span>
+        }
+        else
+        {
+            <a href="#top" onclick="Pagination(@i,'@Model.filterParams.CategorySlug')" class="pagination__page">@i</a>
+        }
+    }
+    <a href="#top" onclick="Pagination(@nextPage,'@Model.filterParams.CategorySlug')"
+        class="pagination__page pagination__icon pagination__page--next"><i class="ui-arrow-left"></i></a>
+</nav>

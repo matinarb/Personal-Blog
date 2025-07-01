@@ -13,7 +13,7 @@
             style="background-image: url(@Directories.GetThumbImg(post.Image))">
             <a asp-page="Post" asp-route-slug="@post.Slug" class="thumb-url"></a>
             <img src="@Directories.GetThumbImg(post.Image)" alt="" class="entry__img d-none">
-            <a asp-page="Search" asp-route-categorySlug="@post.Category?.Slug"
+            <a asp-page="category" asp-route-slug="@post.Category?.Slug"
                 class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--blue">
                 @post.Category?.Title
             </a>
@@ -35,8 +35,7 @@
                 </ul>
             </div>
             <div class="entry__excerpt">
-                <p>عد از اعلام تصمیم سامسونگ برای به عقب انداختن عرضه گلکسی فولد، شایعاتی مبنی بر احتمال تاخیر
-                    در عرضه ...</p>
+                <p>@String.Join(" ", post.Description.HtmltoText().Split(" ").Take(25))...</p>
             </div>
         </div>
     </article>

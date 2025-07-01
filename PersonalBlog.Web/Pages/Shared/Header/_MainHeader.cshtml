@@ -1,3 +1,10 @@
+@using PersonalBlog.CoreLayer.Services.Categories
+@inject ICategoryService CategoryService
+@{
+    var categories = CategoryService.GetAllCategories();
+
+}
+
 <header class="nav">
 
     <div class="nav__holder nav--sticky">
@@ -20,114 +27,32 @@
                 <nav class="flex-child nav__wrap d-none d-lg-block">
                     <ul class="nav__menu">
 
-                        <li class="active">
-                            <a href="index.html">صفحه اصلی</a>
+                        <li class="">
+                            <a href="/">صفحه اصلی</a>
                         </li>
 
-                        <li class="nav__dropdown">
-                            <a href="#">تکنولوژی</a>
-                            <ul class="nav__dropdown-menu nav__megamenu">
-                                <li>
-                                    <div class="nav__megamenu-wrap">
-                                        <div class="row">
-
-                                            <div class="col nav__megamenu-item">
-                                                <article class="entry">
-                                                    <div class="entry__img-holder">
-                                                        <a href="single-post.html">
-                                                            <img src="img/content/thumb/post-1.jpg" alt=""
-                                                                class="entry__img">
-                                                        </a>
-                                                        <a href="categories.html"
-                                                            class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--violet">تکنولوژی</a>
-                                                    </div>
-
-                                                    <div class="entry__body">
-                                                        <h2 class="entry__title">
-                                                            <a href="single-post.html">چرا لانچرهای اندروید دیگر محبوبیت
-                                                                گذشته را ندارند؟</a>
-                                                        </h2>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <div class="col nav__megamenu-item">
-                                                <article class="entry">
-                                                    <div class="entry__img-holder">
-                                                        <a href="single-post.html">
-                                                            <img src="img/content/thumb/post-2.jpg" alt=""
-                                                                class="entry__img">
-                                                        </a>
-                                                        <a href="categories.html"
-                                                            class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--purple">تکنولوژی</a>
-                                                    </div>
-
-                                                    <div class="entry__body">
-                                                        <h2 class="entry__title">
-                                                            <a href="single-post.html">نمایشگر وان پلاس ۷ قرار است ما را
-                                                                شگفت‌زده کند!</a>
-                                                        </h2>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <div class="col nav__megamenu-item">
-                                                <article class="entry">
-                                                    <div class="entry__img-holder">
-                                                        <a href="single-post.html">
-                                                            <img src="img/content/thumb/post-3.jpg" alt=""
-                                                                class="entry__img">
-                                                        </a>
-                                                        <a href="categories.html"
-                                                            class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--blue">تکنولوژی</a>
-                                                    </div>
-
-                                                    <div class="entry__body">
-                                                        <h2 class="entry__title">
-                                                            <a href="single-post.html">با دو هزار یورو، می‌توان چه
-                                                                محصولاتی دیگری به جای گلکسی فولد خرید؟</a>
-                                                        </h2>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <div class="col nav__megamenu-item">
-                                                <article class="entry">
-                                                    <div class="entry__img-holder">
-                                                        <a href="single-post.html">
-                                                            <img src="img/content/thumb/post-4.jpg" alt=""
-                                                                class="entry__img">
-                                                        </a>
-                                                        <a href="categories.html"
-                                                            class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--green">تکنولوژی</a>
-                                                    </div>
-
-                                                    <div class="entry__body">
-                                                        <h2 class="entry__title">
-                                                            <a href="single-post.html">۶ ویژگی برتر رابط کاربری One UI
-                                                                سامسونگ</a>
-                                                        </h2>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                        @foreach (var category in categories)
+                        {
+                            if (category.ParentId == null && categories.Any(c => c.ParentId == category.Id))
+                            {
+                                <li class="nav__dropdown">
+                                    <a asp-page="Category" asp-route-slug="@category.Slug">@category.Title</a>
+                                    <ul class="nav__dropdown-menu">
+                                        @foreach (var subCategory in categories.Where(c => c.ParentId == category.Id))
+                                        {
+                                            <li><a asp-page="Category" asp-route-slug="@subCategory.Slug">@subCategory.Title</a></li>
+                                        }
+                                    </ul>
                                 </li>
-                            </ul> <!-- end megamenu -->
-                        </li>
+                            }
+                            else if(category.ParentId == null)
+                            {
+                                <li class="">
+                                    <a asp-page="Category" asp-route-slug="@category.Slug">@category.Title</a>
+                                </li>
+                            }
+                        }
 
-                        <li class="nav__dropdown">
-                            <a href="#">صفحات</a>
-                            <ul class="nav__dropdown-menu">
-                                <li><a href="about.html">درباره ما</a></li>
-                                <li><a href="contact.html">تماس با ما</a></li>
-                                <li><a href="search-results.html">نتایج جستجو</a></li>
-                                <li><a href="categories.html">دسته بندی مطالب</a></li>
-                                <li><a href="single-post.html">نمایش مطلب</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
 
 
                     </ul> <!-- end menu -->

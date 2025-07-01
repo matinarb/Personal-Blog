@@ -1,6 +1,7 @@
 ﻿@page
 @using PersonalBlog.CoreLayer.Utilities
 @model MyApp.Namespace.SearchModel
+
 @{
     ViewData["Title"] = Model.Filter.filterParams.Search;
 
@@ -15,7 +16,7 @@
         <div class="col-lg-8 blog__content mb-72">
             <h1 class="page-title">نتایج جستجو برای: @Model.Filter.filterParams.Search</h1>
             <div id="posts">
-                <partial name="_Pagination" model="@Model.Filter" />
+                <partial name="_SearchPagination" model="@Model.Filter" />
             </div>
 
 

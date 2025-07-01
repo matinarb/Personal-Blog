@@ -16,10 +16,10 @@ namespace PersonalBlog.Web.Pages
     {
         [Display(Name = "نام کاربری")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string UserName { get; set; }
+        public required string UserName { get; set; }
         [Display(Name = "رمز عبور")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string Password { get; set; }
+        public required string Password { get; set; }
 
         private readonly IUserService _userService;
         public LoginModel(IUserService userService)

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "PersonalBlog.CoreLayer/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.12.1",
           "PersonalBlog.DataLayer": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
@@ -47,6 +48,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.12.1": {
+        "runtime": {
+          "lib/net8.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.12.1.0",
+            "fileVersion": "1.12.1.0"
           }
         }
       },
@@ -660,6 +669,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SP6/2Y26CXtxjXn0Wwsom9Ek35SNWKHEu/IWhNEFejBSSVWWXPRSlpqpBSYWv1SQhYFnwMO01xVbEdK3iRR4hg==",
+      "path": "htmlagilitypack/1.12.1",
+      "hashPath": "htmlagilitypack.1.12.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",

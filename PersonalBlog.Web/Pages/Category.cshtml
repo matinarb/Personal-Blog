@@ -1,0 +1,63 @@
+﻿@page "{slug}"
+@model MyApp.Namespace.CategoryModel
+@{
+    ViewData["Title"] = Model.category.Title;
+}
+<div class="container">
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__url">خانه</a>
+        </li>
+        @if (Model.category.Parent != null)
+        {
+            <li class="breadcrumbs__item">
+                <a asp-page="Category" asp-route-slug="@Model.category.Parent?.Slug"
+                    class="breadcrumbs__url">@Model.category.Parent?.Title</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+                @Model.category.Title
+            </li>
+        }
+        else
+        {
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+                @Model.category.Title
+            </li>
+        }
+
+
+    </ul>
+</div>
+
+
+<div class="main-container container" id="main-container">
+    <!-- Content -->
+    <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content mb-72">
+            <div id="posts">
+                <partial name="_CategoryPagination" model="Model.Filter" />
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <partial name="_Sidebar" />
+        <!-- end sidebar -->
+
+    </div> <!-- end content -->
+</div>
+
+@section script {
+    <script>
+        function Pagination(i, s) {
+            $.ajax({
+                url: `/category/${s}?pageId=${i}&handler=Pagination`,
+                type: 'GET'
+            })
+                .done(function (data) {
+                    document.getElementById("posts").innerHTML = data;
+                })
+        }
+    </script>
+}

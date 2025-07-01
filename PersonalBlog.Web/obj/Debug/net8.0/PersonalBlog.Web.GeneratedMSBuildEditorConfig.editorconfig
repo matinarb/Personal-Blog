@@ -128,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclBhbmVsXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/GitHub/Personal-Blog/personalblog.web/Pages/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/GitHub/Personal-Blog/personalblog.web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -172,6 +176,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_CategoryPagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXRlZ29yeVBhZ2luYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -180,8 +188,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_Pagination.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYWdpbmF0aW9uLmNzaHRtbA==
+[E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_SearchPagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWFyY2hQYWdpbmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GitHub/Personal-Blog/personalblog.web/Pages/Shared/_SideBar.cshtml]

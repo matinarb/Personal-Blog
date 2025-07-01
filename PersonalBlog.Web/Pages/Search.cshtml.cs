@@ -7,8 +7,8 @@ namespace MyApp.Namespace
 {
     public class SearchModel(IPostService postService) : PageModel
     {
-        IPostService _postService = postService;
-        public FilterPostDto Filter { get; set; }
+        private readonly IPostService _postService = postService;
+        public required FilterPostDto Filter { get; set; }
         public void OnGet(int pageId = 1, string search = "", string categorySlug = "")
         {
             var param = new PostFilterParams()
@@ -16,7 +16,7 @@ namespace MyApp.Namespace
                 CategorySlug = categorySlug,
                 PageId = pageId,
                 Search = search,
-                Take = 1
+                Take = 6
             };
             Filter = _postService.GetPostByFilter(param);
         }
@@ -28,10 +28,10 @@ namespace MyApp.Namespace
                 CategorySlug = categorySlug,
                 PageId = pageId,
                 Search = search,
-                Take = 1
+                Take = 6
             };
             Filter = _postService.GetPostByFilter(param);
-            return Partial("_Pagination" , Filter);
+            return Partial("_SearchPagination" , Filter);
         }
     }
 }

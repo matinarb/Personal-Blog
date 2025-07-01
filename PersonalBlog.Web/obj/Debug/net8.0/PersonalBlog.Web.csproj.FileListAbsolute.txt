@@ -167,3 +167,4 @@ E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\ref\PersonalBlog.Web.d
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.staticwebassets.endpoints.json
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\HtmlAgilityPack.dll
