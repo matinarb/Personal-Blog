@@ -8,6 +8,7 @@ public class EditPostDto
     public string Title { get; set; }
     public IFormFile Image { get; set; }
     public string Description { get; set; }
-    public int CategoryId { get; set; } 
-    
+    public int CategoryId { get; set; }
+    public bool IsSpecial { get; set; }
+
 }

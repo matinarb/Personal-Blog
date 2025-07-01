@@ -41,7 +41,7 @@
                                     {
                                         if (s.ParentId == c.Id)
                                         {
-                                            <option value="@s.Id" style="color: rgb(62, 203, 250);">   @s.Title</option>
+                                            <option value="@s.Id" style="color: rgb(62, 203, 250);"> @s.Title</option>
                                         }
                                     }
                                 }
@@ -53,6 +53,9 @@
                 <div class="col-md-9">
                     @Html.EditorFor(Model => Model.Description)
 
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(Model => Model.IsSpecial)
                 </div>
             </div>
             <div class="box-footer">

@@ -57,7 +57,8 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
                 Description = model.Description,
                 Image = model.Image,
                 CategoryId = model.CategoryId,
-                UserId = User.GetUserId()
+                UserId = User.GetUserId(),
+                IsSpecial = model.IsSpecial
             });
 
 
@@ -78,7 +79,8 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
             {
                 Title = post.Title,
                 CategoryId = post.CategoryId,
-                Description = post.Description
+                Description = post.Description,
+                IsSpecial = post.IsSpecial
             };
             return View(EditViewModel);
         }
@@ -95,7 +97,8 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
                 Description = model.Description,
                 CategoryId = model.CategoryId,
                 Image = model.Image,
-                PostId = id
+                PostId = id,
+                IsSpecial = model.IsSpecial
             });
 
             if (result.Status != OperationResultStatus.Success)

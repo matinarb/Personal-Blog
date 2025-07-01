@@ -20,6 +20,7 @@ public static class PostMapper
             CategoryId = createPost.CategoryId,
             Visit = 0,
             IsDelete = false,
+            IsSpecial = createPost.IsSpecial
         };
     }
 
@@ -29,6 +30,7 @@ public static class PostMapper
         post.Description = editPost.Description;
         post.Slug = editPost.Title.toSlug();
         post.CategoryId = editPost.CategoryId;
+        post.IsSpecial = editPost.IsSpecial;
         return post;
     }
 
@@ -46,7 +48,8 @@ public static class PostMapper
             UserId = p.UserId,
             User = UserMapper.MapTo(p.User),
             Description = p.Description,
-            Visit = p.Visit
+            Visit = p.Visit,
+            IsSpecial = p.IsSpecial
         };
     }
 }

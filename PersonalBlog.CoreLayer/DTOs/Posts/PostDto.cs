@@ -16,5 +16,6 @@ public class PostDto
     public CategoriesDto? Category { get; set; }
     public UserDto? User { get; set; }
     public int Visit { get; set; }
-    
+    public bool IsSpecial { get; set; }
+
 }

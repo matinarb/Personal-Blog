@@ -15,6 +15,7 @@ public class Post : BaseEntity
     [Required]
     public string Description { get; set; }
     public int Visit { get; set; }
+    public bool IsSpecial { get; set; }
 
 
 

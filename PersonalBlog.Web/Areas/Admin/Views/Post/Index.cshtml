@@ -31,6 +31,7 @@
                         <th>#</th>
                         <th>عنوان</th>
                         <th>عکس</th>
+                        <th>پست ویژه</th>
                         <th>نویسنده</th>
                         <th>گروه</th>
                         <th>عملیات</th>
@@ -44,7 +45,15 @@
                             <td>@count</td>
                             <td>@p.Title</td>
                             <td><img style="width: 150px;" src="@Directories.GetThumbImg(p.Image)"></td>
-                            <td></td>
+                            <td>
+                                @if(p.IsSpecial){
+                                    <li class="fa fa-check text-success"></li>
+                                }
+                                else{
+                                    <li class="fa fa-close text-danger"></li>
+                                }
+                            </td>
+                            <td>@p.User?.UserName</td>
                             <td>@p.Category.Title</td>
                             <td>
                                 <a asp-area="admin" asp-controller="Post" asp-action="Edit" asp-route-id="@p.PostId" class="btn btn-info btn-sm">ویرایش</a>
