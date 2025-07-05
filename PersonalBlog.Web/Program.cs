@@ -31,7 +31,13 @@ builder.Services.AddDbContext<BlogContext>(options =>
 });
 
 // Authorization
-
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("AdminPolicy",builder =>
+    {
+        builder.RequireRole("Admin");
+    });
+});
 
 // Authentication
 builder.Services.AddAuthentication(option =>
@@ -44,6 +50,7 @@ builder.Services.AddAuthentication(option =>
     option.LoginPath = "/login";
     option.LogoutPath = "/logout";
     option.ExpireTimeSpan = TimeSpan.FromDays(30);
+    option.AccessDeniedPath = "/AccessDenied";
 });
 
 

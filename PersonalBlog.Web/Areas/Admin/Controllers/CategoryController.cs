@@ -8,8 +8,7 @@ using PersonalBlog.Web.Areas.Admin.Models.Categories;
 
 namespace PersonalBlog.Web.Areas.Admin.Controllers
 {
-    [Area("admin")]
-    public class CategoryController : Controller
+    public class CategoryController : AdminControllerBase
     {
         private readonly ICategoryService _categoryService;
         public CategoryController(ICategoryService categoryService)

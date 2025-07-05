@@ -12,8 +12,7 @@ using PersonalBlog.Web.Areas.Admin.Models.Posts;
 
 namespace PersonalBlog.Web.Areas.Admin.Controllers
 {
-    [Area("admin")]
-    public class PostController : Controller
+    public class PostController : AdminControllerBase
     {
         private readonly IPostService _postService;
         public PostController(IPostService postService)

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonalBlog.CoreLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c8a550149d5e5ec85e2151d757259f0b91527ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1624bb4644f6acfd25ad48385e8c067ad136933")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonalBlog.CoreLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonalBlog.CoreLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

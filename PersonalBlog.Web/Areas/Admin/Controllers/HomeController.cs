@@ -4,8 +4,7 @@ using PersonalBlog.CoreLayer.Utilities;
 
 namespace PersonalBlog.Web.Areas.Admin.Controllers
 {
-    [Area("admin")]
-    public class HomeController : Controller
+    public class HomeController : AdminControllerBase
     {
         private readonly IFileManager _fileManager;
         public HomeController(IFileManager fileManager)
