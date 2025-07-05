@@ -1,0 +1,75 @@
+@using PersonalBlog.CoreLayer.DTOs.MainPage
+@using PersonalBlog.CoreLayer.Utilities
+@model MainPageDto
+@{
+    var SpecialPosts = Model.SpecialPosts;
+    var currentCategory = Model.Categories.FirstOrDefault(c => c.IsCurrentCategory == true);
+}
+<section class="section tab-post mb-16">
+    <div class="title-wrap title-wrap--line">
+        <h3 class="section-title">آخرین عنوان ها</h3>
+
+        <div class="tabs tab-post__tabs">
+            <ul class="tabs__list">
+                <li class="tabs__item @(currentCategory == null ? "tabs__item--active" : "")">
+                    <a href="#main-container" onclick="Pagination('')" class="tabs__trigger">همه</a>
+                </li>
+                @foreach (var category in Model.Categories)
+                {
+                    <li class="tabs__item @(currentCategory?.Slug == category.Slug ? "tabs__item--active" : "")">
+                        <a href="#main-container" onclick="Pagination('@category.Slug')" class="tabs__trigger">@category.Title</a>
+                    </li>
+                }
+    </div>
+    </div>
+
+    <!-- tab content -->
+    <div class="tabs__content tabs__content-trigger tab-post__tabs-content">
+
+        <div class="tabs__content-pane tabs__content-pane--active" id="tab-all">
+            <div class="row card-row">
+                @foreach (var post in Model.Posts.posts)
+                {
+                    <div class="col-md-6">
+                        <article class="entry card">
+                            <div class="entry__img-holder card__img-holder">
+                                <a asp-page="Post" asp-route-Slug="@post.Slug">
+                                    <div class="thumb-container thumb-70">
+                                        <img data-src="@Directories.GetThumbImg(post.Image)" src="img/empty.png"
+                                            class="entry__img lazyload" alt="" />
+                                    </div>
+                                </a>
+                                <a asp-page="Category" asp-route-Slug="@post.Category?.Slug"
+                                    class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--violet">@post.Category?.Title
+                                </a>
+                            </div>
+
+                            <div class="entry__body card__body">
+                                <div class="entry__header">
+
+                                    <h2 class="entry__title">
+                                        <a asp-page="Post" asp-route-Slug="@post.Slug">@post.Title</a>
+                                    </h2>
+                                    <ul class="entry__meta">
+                                        <li class="entry__meta-author">
+                                            <span>نویسنده:</span>
+                                            <a href="#">@post.User?.UserName</a>
+                                        </li>
+                                        <li class="entry__meta-date">
+                                            @post.CreationDate
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>@String.Join(" ", post.Description.HtmltoText().Split(" ").Take(25))...
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                }
+
+            </div>
+        </div> <!-- end pane -->
+    </div> <!-- end tab content -->
+</section>

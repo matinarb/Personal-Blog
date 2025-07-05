@@ -13,6 +13,7 @@ public interface IPostService
     PostDto GetPostBy(int id);
     List<PostDto> GetRelatedPosts(int postId);
     List<PostDto> GetPopularPosts();
+    List<PostDto> GetSpecialPosts();
     bool IsValidSlug(string slug);
     void RaiseVisit(int postId);
 }

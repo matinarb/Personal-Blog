@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PersonalBlog.CoreLayer.DTOs.Categories;
 using PersonalBlog.CoreLayer.Services.Categories;
+using PersonalBlog.DataLayer.Entities;
 using PersonalBlog.Web.Areas.Admin.Models.Categories;
 
 namespace PersonalBlog.Web.Areas.Admin.Controllers
@@ -24,7 +26,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
             return View();
         }
         [HttpPost("admin/Category/Add/{slug?}")]
-        public IActionResult Add(string? slug,AddCategoryViewModel categoryViewModel)
+        public IActionResult Add(string? slug, AddCategoryViewModel categoryViewModel)
         {
             int? parentid = _categoryService.GetCategoryBy(slug)?.Id ?? null;
             if (!ModelState.IsValid) return View(categoryViewModel);
@@ -37,7 +39,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
             });
             if (result.Status == CoreLayer.Utilities.OperationResultStatus.Error)
             {
-                ModelState.AddModelError("Title",result.Message);
+                ModelState.AddModelError("Title", result.Message);
                 return View(categoryViewModel);
             }
             return RedirectToAction("Index");
@@ -59,12 +61,12 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
 
             return View(editCategory);
         }
-        
+
         [HttpPost("admin/Category/Edit/{slug}")]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(EditCategoryViewModel editCategory)
         {
-            if(!ModelState.IsValid) return View(editCategory);
+            if (!ModelState.IsValid) return View(editCategory);
             _categoryService.EditCategory(new EditCategoryDto()
             {
                 Id = editCategory.Id,
@@ -76,7 +78,8 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Delete(string slug){
+        public IActionResult Delete(string slug)
+        {
             _categoryService.DeleteCategory(slug);
             return RedirectToAction("Index");
         }

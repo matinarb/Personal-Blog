@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using PersonalBlog.CoreLayer.Services.Categories;
 using PersonalBlog.CoreLayer.Services.Comment;
 using PersonalBlog.CoreLayer.Services.FileManager;
+using PersonalBlog.CoreLayer.Services.MainPage;
 using PersonalBlog.CoreLayer.Services.Posts;
 using PersonalBlog.CoreLayer.Services.Users;
 using PersonalBlog.DataLayer.Context;
@@ -17,13 +18,20 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddTransient<IPostService,PostService>();
+builder.Services.AddTransient<IPostService, PostService>();
 builder.Services.AddTransient<IFileManager, FileManager>();
 builder.Services.AddTransient<ICommentService, CommentService>();
+builder.Services.AddTransient<IMainPageService, MainPageService>();
 
 // DataBase
 var connectionString = builder.Configuration.GetConnectionString("Default");
-builder.Services.AddDbContext<BlogContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<BlogContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+});
+
+// Authorization
+
 
 // Authentication
 builder.Services.AddAuthentication(option =>
@@ -58,12 +66,13 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>{
+app.UseEndpoints(endpoints =>
+{
     endpoints.MapControllerRoute(
-        name :"Default",
+        name: "Default",
         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
-    });
+});
 app.MapRazorPages();
 
 app.Run();

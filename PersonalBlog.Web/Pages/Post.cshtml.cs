@@ -19,7 +19,7 @@ namespace MyApp.Namespace
 
         public required PostDto Post { get; set; }
         public List<CommentDto>? Comments { get; set; }
-        public List<PostDto> RelatedPosts { get; set; }
+        public List<PostDto>? RelatedPosts { get; set; }
 
         [BindProperty]
         [Display(Name ="دیدگاه")]
@@ -44,7 +44,7 @@ namespace MyApp.Namespace
         public IActionResult OnPost(string slug = "")
         {
             
-            if (!User.Identity.IsAuthenticated) return RedirectToPage("Post", new { slug = slug });
+            if (!User.Identity?.IsAuthenticated ?? false) return RedirectToPage("Post", new { slug = slug });
 
             if (!ModelState.IsValid)
             {

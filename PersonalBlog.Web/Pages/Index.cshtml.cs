@@ -1,31 +1,32 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PersonalBlog.CoreLayer.DTOs.MainPage;
+using PersonalBlog.CoreLayer.Services.MainPage;
 using PersonalBlog.DataLayer.Context;
 using PersonalBlog.DataLayer.Entities;
 
 namespace PersonalBlog.Web.Pages;
+
 [Authorize]
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly IMainPageService _mainPageService;
+    public MainPageDto mainDto { get; set; }
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public IndexModel(IMainPageService mainPageService)
     {
-        _logger = logger;
+        _mainPageService = mainPageService;
 
     }
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public void OnGet(int id, string name)
+    public void OnGet()
     {
-        Id = id;
-        Name = name;
+        mainDto = _mainPageService.GetAll("");
     }
 
-    public IActionResult OnPost()
+    public IActionResult OnGetPagination(string Slug)
     {
-
-        return Redirect("/Privacy");
+        mainDto = _mainPageService.GetAll(Slug);
+        return Partial("_MainPagePagination",mainDto);
     }
 }

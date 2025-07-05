@@ -51,9 +51,9 @@ namespace PersonalBlog.Web.Pages
 
             List<Claim> claims = new List<Claim>()
             {
-                new Claim("test","taest"),
+                new Claim(ClaimTypes.Role , user.Role.ToString()),
                 new Claim(ClaimTypes.NameIdentifier , user.UserId.ToString()),
-                new Claim(ClaimTypes.Name , user.FullName)
+                new Claim(ClaimTypes.Name , user.FullName),
             };
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var claimPrincipal = new ClaimsPrincipal(identity);

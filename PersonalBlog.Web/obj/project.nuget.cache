@@ -89,5 +89,15 @@
     "C:\\Users\\sakht system\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512",
     "C:\\Users\\sakht system\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.16\\microsoft.netcore.app.host.win-x64.8.0.16.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\GitHub\\Personal-Blog\\personalblog.web\\PersonalBlog.Web.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

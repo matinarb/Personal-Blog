@@ -143,4 +143,13 @@ public class PostService : IPostService
         post.Visit += 1;
         _context.SaveChanges();
     }
+
+    public List<PostDto> GetSpecialPosts()
+    {
+        var posts = _context.Posts.Where(p => p.IsSpecial == true).OrderByDescending(p=>p.CreationDate)
+                                                             .Include(p => p.Category)
+                                                             .Include(p => p.User)
+                                                             .Select(p => PostMapper.Mapto(p)).ToList();
+        return posts;
+    }
 }
