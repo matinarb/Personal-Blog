@@ -92,8 +92,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/Shared/_PaginationPost.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdpbmF0aW9uUG9zdC5jc2h0bWw=
+[E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/Shared/_Pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdpbmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/Shared/_PostFiltering.cshtml]
@@ -102,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GitHub/Personal-Blog/personalblog.web/Areas/Admin/Views/_ViewImports.cshtml]

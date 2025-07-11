@@ -5,7 +5,6 @@
 @{
     ViewData["Title"] = "پست ها";
     ViewData["selected"] = "post";
-    var count = 1;
 }
 <section class="content-header">
     <h1>
@@ -20,53 +19,21 @@
 <section class="content">
     <a class="btn btn-success" asp-area="admin" asp-controller="Post" asp-action="Add"
         style="margin-bottom: 5px;">افزودن پست جدید</a>
-    <form method="get" asp-area="admin" asp-controller="Post" asp-action="Index">
-        <partial name="_PostFiltering" model="@Model"/>
-    </form>
-    <div class="box box-primary">
-        <div class="box box-body p-0">
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>عنوان</th>
-                        <th>عکس</th>
-                        <th>پست ویژه</th>
-                        <th>نویسنده</th>
-                        <th>گروه</th>
-                        <th>عملیات</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    @foreach (var p in Model.posts)
-                    {
-                        <tr>
-                            <td>@count</td>
-                            <td>@p.Title</td>
-                            <td><img style="width: 150px;" src="@Directories.GetThumbImg(p.Image)"></td>
-                            <td>
-                                @if(p.IsSpecial){
-                                    <li class="fa fa-check text-success"></li>
-                                }
-                                else{
-                                    <li class="fa fa-close text-danger"></li>
-                                }
-                            </td>
-                            <td>@p.User?.UserName</td>
-                            <td>@p.Category.Title</td>
-                            <td>
-                                <a asp-area="admin" asp-controller="Post" asp-action="Edit" asp-route-id="@p.PostId" class="btn btn-info btn-sm">ویرایش</a>
-                                <a asp-area="admin" asp-controller="Post" asp-action="Delete" asp-route-id="@p.PostId" class="btn btn-danger btn-sm">حذف</a>
-                            </td>
-                        </tr>
-                        count++;
-                    }
-
-
-                </tbody>
-            </table>
-            <partial name="_PaginationPost" model="@Model"/>
-        </div>
+    <div id="filter-post">
+        <partial name="_PostFiltering" model="@Model" />
     </div>
 </section>
+
+@section script {
+    <script>
+        function Pagination(i) {
+            $.ajax({
+                url: `/Admin/Post/Pagination?pageId=${i}&search=@Model.filterParams.Search&categorySlug=@Model.filterParams.CategorySlug`,
+                type: 'GET'
+            })
+                .done(function (data) {
+                    document.getElementById("filter-post").innerHTML = data;
+                })
+        }
+    </script>
+}

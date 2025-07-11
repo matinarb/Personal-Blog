@@ -1,8 +1,9 @@
+using PersonalBlog.CoreLayer.Utilities;
+
 namespace PersonalBlog.CoreLayer.DTOs.Posts;
 
-public class FilterPostDto
+public class FilterPostDto :BasePagination
 {
-    public int PageCount { get; set; }
     public PostFilterParams filterParams { get; set; }
     public List<PostDto> posts { get; set; }
     

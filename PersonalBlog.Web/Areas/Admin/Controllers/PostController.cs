@@ -21,16 +21,25 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
         }
         public ActionResult Index(int pageid = 1, string search = "", string categorySlug = "")
         {
-            pageid = pageid < 1 ? 1 : pageid;
-
             var posts = _postService.GetPostByFilter(new PostFilterParams()
             {
                 PageId = pageid,
                 Search = search,
                 CategorySlug = categorySlug,
-                Take = 10
+                Take = 8
             });
             return View(posts);
+        }
+        public IActionResult Pagination(int pageid = 1, string search = "", string categorySlug = "")
+        {
+            var posts = _postService.GetPostByFilter(new PostFilterParams()
+            {
+                PageId = pageid,
+                Search = search,
+                CategorySlug = categorySlug,
+                Take = 8
+            });
+            return PartialView("_PostFiltering", posts);
         }
 
         public IActionResult Add()
@@ -63,7 +72,7 @@ namespace PersonalBlog.Web.Areas.Admin.Controllers
 
             if (result.Status != OperationResultStatus.Success)
             {
-                ModelState.AddModelError("Title", result.Message);
+                ModelState.AddModelError("Image", result.Message);
                 return View();
             }
 

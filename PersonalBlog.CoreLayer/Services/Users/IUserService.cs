@@ -8,6 +8,7 @@ namespace PersonalBlog.CoreLayer.Services.Users
     {
         OperationResult RegisterUser(UserRegisterDto registerDto);
         UserDto LoginUser(UserLoginDto loginDto);
+        
     }
 
 }

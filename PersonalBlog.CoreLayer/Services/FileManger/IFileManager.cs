@@ -6,4 +6,5 @@ public interface IFileManager
 {
     string SaveFile(IFormFile file, string savePath);
     void DeleteFile(string fileName, string path);
+    string SaveImage(IFormFile file, string savePath);
 }

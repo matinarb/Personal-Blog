@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http;
+using PersonalBlog.CoreLayer.Utilities;
 
 namespace PersonalBlog.CoreLayer.Services.FileManager;
 
@@ -11,11 +12,20 @@ public class FileManager : IFileManager
             File.Delete(fullPath);
     }
 
-    public string SaveFile(IFormFile file, string savePath)
+    public string SaveImage(IFormFile file, string savePath)
     {
         if (file == null)
             return "";
 
+        if (!ImageValidation.Validate(file)) return "";
+
+        return SaveFile(file, savePath);
+    }
+
+    public string SaveFile(IFormFile file, string savePath)
+    {
+        if (file == null)
+            return "";
 
         var fileName = $"{Guid.NewGuid()}{file.FileName}";
         var folderPath = Path.Combine(Directory.GetCurrentDirectory(), savePath.Replace("/", "\\"));

@@ -26,7 +26,10 @@ public class PostService : IPostService
         if (createPost.Image == null) return OperationResult.Error();
 
         var post = PostMapper.MapTo(createPost);
-        post.Image = _fileManager.SaveFile(createPost.Image, Directories.ThumbImg);
+
+        var ImageName = _fileManager.SaveImage(createPost.Image, Directories.ThumbImg);
+        if (String.IsNullOrEmpty(ImageName)) return OperationResult.Error("فایل عکس نیست");
+        post.Image = ImageName;
 
         _context.Posts.Add(post);
         _context.SaveChanges();
@@ -78,25 +81,30 @@ public class PostService : IPostService
         if (!string.IsNullOrWhiteSpace(param.Search))
             result = result.Where(p => p.Title.Contains(param.Search));
 
-        var skip = (param.PageId - 1) * param.Take;
         var PageCount = result.Count() % param.Take == 0 ? result.Count() / param.Take : result.Count() / param.Take + 1;
+        param.PageId = param.PageId > PageCount ? PageCount : param.PageId;
+        param.PageId = param.PageId < 1 ? 1 : param.PageId;
+        var skip = (param.PageId - 1) * param.Take;
 
-        return new FilterPostDto()
+        var model = new FilterPostDto()
         {
-            PageCount = PageCount,
-            filterParams = param,
             posts = result.Skip(skip).Take(param.Take).Include(p => p.Category)
-                                                      .Include(p=>p.Category.Parent)
-                                                      .Include(p=>p.User)
-                                                      .Select(p => PostMapper.Mapto(p)).ToList()
+                                                      .Include(p => p.Category.Parent)
+                                                      .Include(p => p.User)
+                                                      .Select(p => PostMapper.Mapto(p)).ToList(),
+            filterParams = param
+            
         };
+        model.GeneratePaging(result, param.Take, param.PageId);
+
+        return model;
     }
 
     public PostDto GetPostBy(string slug)
     {
         var post = _context.Posts.Include(p => p.Category)
-                                 .Include(p=>p.Category.Parent)
-                                 .Include(p=>p.User)
+                                 .Include(p => p.Category.Parent)
+                                 .Include(p => p.User)
                                  .FirstOrDefault(p => p.Slug == slug && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
@@ -106,8 +114,8 @@ public class PostService : IPostService
     public PostDto GetPostBy(int id)
     {
         var post = _context.Posts.Include(p => p.Category)
-                                 .Include(p=>p.Category.Parent)
-                                 .Include(p=>p.User)
+                                 .Include(p => p.Category.Parent)
+                                 .Include(p => p.User)
                                  .FirstOrDefault(p => p.Id == id && p.IsDelete == false);
         if (post == null) return null;
         return PostMapper.Mapto(post);
@@ -121,32 +129,32 @@ public class PostService : IPostService
 
     public List<PostDto> GetRelatedPosts(int postId)
     {
-        var post = _context.Posts.FirstOrDefault(p=>p.Id==postId&&p.IsDelete==false);
-        if(post==null) return null;
+        var post = _context.Posts.FirstOrDefault(p => p.Id == postId && p.IsDelete == false);
+        if (post == null) return null;
 
-        var posts = _context.Posts.Where(p=>p.CategoryId==post.CategoryId&&p.IsDelete==false).OrderByDescending(p=>p.CreationDate).Take(6)
-                                                                          .Select(p=>PostMapper.Mapto(p)).ToList();
+        var posts = _context.Posts.Where(p => p.CategoryId == post.CategoryId && p.IsDelete == false).OrderByDescending(p => p.CreationDate).Take(6)
+                                                                          .Select(p => PostMapper.Mapto(p)).ToList();
         return posts;
     }
 
     public List<PostDto> GetPopularPosts()
     {
-        var posts = _context.Posts.Where(p=>p.IsDelete==false).OrderByDescending(p=>p.Visit).Take(4)
-                                                              .Include(p=>p.User)
-                                                              .Select(p=>PostMapper.Mapto(p)).ToList();
+        var posts = _context.Posts.Where(p => p.IsDelete == false).OrderByDescending(p => p.Visit).Take(4)
+                                                              .Include(p => p.User)
+                                                              .Select(p => PostMapper.Mapto(p)).ToList();
         return posts;
     }
 
     public void RaiseVisit(int postId)
     {
-        var post = _context.Posts.First(p=>p.Id==postId);
+        var post = _context.Posts.First(p => p.Id == postId);
         post.Visit += 1;
         _context.SaveChanges();
     }
 
     public List<PostDto> GetSpecialPosts()
     {
-        var posts = _context.Posts.Where(p => p.IsSpecial == true).OrderByDescending(p=>p.CreationDate)
+        var posts = _context.Posts.Where(p => p.IsSpecial == true).OrderByDescending(p => p.CreationDate)
                                                              .Include(p => p.Category)
                                                              .Include(p => p.User)
                                                              .Select(p => PostMapper.Mapto(p)).ToList();
