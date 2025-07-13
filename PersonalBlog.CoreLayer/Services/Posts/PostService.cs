@@ -81,21 +81,14 @@ public class PostService : IPostService
         if (!string.IsNullOrWhiteSpace(param.Search))
             result = result.Where(p => p.Title.Contains(param.Search));
 
-        var PageCount = result.Count() % param.Take == 0 ? result.Count() / param.Take : result.Count() / param.Take + 1;
-        param.PageId = param.PageId > PageCount ? PageCount : param.PageId;
-        param.PageId = param.PageId < 1 ? 1 : param.PageId;
-        var skip = (param.PageId - 1) * param.Take;
-
-        var model = new FilterPostDto()
-        {
-            posts = result.Skip(skip).Take(param.Take).Include(p => p.Category)
-                                                      .Include(p => p.Category.Parent)
-                                                      .Include(p => p.User)
-                                                      .Select(p => PostMapper.Mapto(p)).ToList(),
-            filterParams = param
-            
-        };
+        var model = new FilterPostDto();
         model.GeneratePaging(result, param.Take, param.PageId);
+
+        model.posts = result.Skip(model.Skip).Take(model.Take).Include(p => p.Category)
+                                                  .Include(p => p.Category.Parent)
+                                                  .Include(p => p.User)
+                                                  .Select(p => PostMapper.Mapto(p)).ToList();
+        model.filterParams = param;
 
         return model;
     }

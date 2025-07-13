@@ -12,7 +12,6 @@ public static class UserMapper
         {
             CreationDate = user.CreationDate,
             FullName = user.FullName,
-            Password = user.Password,
             Role = user.Role,
             UserId = user.Id,
             UserName = user.UserName

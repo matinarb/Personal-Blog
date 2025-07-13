@@ -17,20 +17,20 @@
         <form role="form" method="post" asp-area="admin" asp-controller="Category" asp-action="Add">
             <div class="box-body">
                 <div class="col-md-6">
-                    @Html.EditorFor(Model=>Model.Title)
+                    @Html.EditorFor(Model => Model.Title)
                 </div>
                 <div class="col-md-6">
-                    @Html.EditorFor(Model=>Model.MetaTag)
+                    @Html.EditorFor(Model => Model.MetaTag)
                 </div>
                 <div class="col-md-6">
-                    @Html.EditorFor(Model=>Model.MetaDescription)
+                    @Html.EditorFor(Model => Model.MetaDescription)
                 </div>
-                
+
             </div>
             <div class="box-footer">
                 <button type="submit" class="btn btn-primary">ارسال</button>
             </div>
         </form>
     </div>
-    
+
 </section>
