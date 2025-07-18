@@ -61,7 +61,7 @@ namespace PersonalBlog.CoreLayer.Services.Users
             var result = _context.Users.AsQueryable().Where(u => u.IsDelete == false);
 
             if (!String.IsNullOrWhiteSpace(Params.SearchTerm))
-                result = result.Where(u => u.UserName == Params.SearchTerm || u.FullName == Params.SearchTerm);
+                result = result.Where(u => u.UserName.Contains(Params.SearchTerm) || u.FullName.Contains(Params.SearchTerm));
 
             var model = new FilterUserDto();
             model.GeneratePaging(result, Params.Take, Params.PageId);
@@ -69,6 +69,27 @@ namespace PersonalBlog.CoreLayer.Services.Users
             model.Users = result.Skip(model.Skip).Take(model.Take).Select(u => UserMapper.MapTo(u)).ToList();
 
             return model;
+        }
+
+        public UserDto GetUserBy(int id)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (user == null) return null;
+            var userDto = UserMapper.MapTo(user);
+            return userDto;
+        }
+
+        public OperationResult EditUser(UserEditDto editDto)
+        {
+            var user = _context.Users.AsNoTracking().FirstOrDefault(u => u.Id == editDto.UserId);
+            if (user == null) return OperationResult.NotFound();
+
+            user.FullName = editDto.FullName;
+            user.Role = editDto.Role;
+
+            _context.Users.Update(user);
+            _context.SaveChanges();
+            return OperationResult.Success();
         }
     }
 

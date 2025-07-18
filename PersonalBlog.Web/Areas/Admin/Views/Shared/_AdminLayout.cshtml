@@ -38,6 +38,17 @@
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
 
         <partial name="_Header" />
@@ -64,6 +75,7 @@
         <div class="control-sidebar-bg"></div>
     </div>
     <!-- ./wrapper -->
+    @await RenderSectionAsync("modal", false)
 
     <!-- jQuery 3 -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -87,6 +99,8 @@
     <!-- AdminLTE for demo purposes -->
     <script src="/dist/js/demo.js"></script>
     <script src="/js/custom.js"></script>
+    <script src="/js/global.js"></script>
+
     @await RenderSectionAsync("script", false)
 </body>
 

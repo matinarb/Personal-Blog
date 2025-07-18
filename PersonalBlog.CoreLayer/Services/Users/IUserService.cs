@@ -8,6 +8,9 @@ namespace PersonalBlog.CoreLayer.Services.Users
     {
         OperationResult RegisterUser(UserRegisterDto registerDto);
         UserDto LoginUser(UserLoginDto loginDto);
+        FilterUserDto FilterUser(UserFilterParams Params);
+        UserDto GetUserBy(int id);
+        OperationResult EditUser(UserEditDto editDto);
         
     }
 

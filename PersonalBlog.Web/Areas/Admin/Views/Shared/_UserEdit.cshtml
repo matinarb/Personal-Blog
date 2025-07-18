@@ -1,0 +1,16 @@
+@model PersonalBlog.Web.Areas.Admin.Models.Users.EditUserViewModel
+<form method="post" asp-area="Admin" asp-controller="User" asp-action="EditUser" asp-antiforgery="true">
+    <input type="hidden" asp-for="@Model.UserId" value="@Model.UserId">
+    <div class="box-body row">
+        <div class="col-md-6">
+            @Html.EditorFor(Model => Model.FullName)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(Model => Model.Role)
+        </div>
+    </div>
+    <div class="box-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-primary">ویرایش</button>
+    </div>
+</form>

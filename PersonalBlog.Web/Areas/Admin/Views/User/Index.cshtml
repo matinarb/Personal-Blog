@@ -1,0 +1,35 @@
+@model PersonalBlog.CoreLayer.DTOs.Users.FilterUserDto
+
+@{
+    ViewData["Title"] = "کاربر ها";
+    ViewData["selected"] = "user";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="admin" asp-controller="Post" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a>
+        </li>
+        <li class="active">@ViewData["Title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div id="filter-user">
+        <partial name="_UserFiltering" model="@Model" />
+    </div>
+</section>
+
+@section script {
+    <script>
+        function Pagination(i) {
+            $.ajax({
+                url: `/Admin/User/Pagination?pageId=${i}&search=@Model.Param.SearchTerm`,
+                type: 'GET'
+            })
+                .done(function (data) {
+                    document.getElementById("filter-user").innerHTML = data;
+                })
+        }
+    </script>
+}
