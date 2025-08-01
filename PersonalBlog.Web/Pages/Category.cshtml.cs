@@ -25,7 +25,7 @@ namespace MyApp.Namespace
                 PageId = pageId,
                 Take = 6
             };
-            ViewData["category"] = category?.Title ?? "not found";
+            ViewData["category"] = category?.Title ?? "دسته بندی یافت نشد";
             Filter = _postService.GetPostByFilter(param);
         }
 

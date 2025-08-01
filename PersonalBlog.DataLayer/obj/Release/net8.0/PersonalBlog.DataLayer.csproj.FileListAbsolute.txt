@@ -1,0 +1,15 @@
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\bin\Release\net8.0\PersonalBlog.DataLayer.deps.json
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\bin\Release\net8.0\PersonalBlog.DataLayer.runtimeconfig.json
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\bin\Release\net8.0\PersonalBlog.DataLayer.dll
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\bin\Release\net8.0\PersonalBlog.DataLayer.pdb
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.csproj.AssemblyReference.cache
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.AssemblyInfoInputs.cache
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.AssemblyInfo.cs
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.csproj.CoreCompileInputs.cache
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.sourcelink.json
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.dll
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\refint\PersonalBlog.DataLayer.dll
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.pdb
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\PersonalBlog.DataLayer.genruntimeconfig.cache
+E:\GitHub\Personal-Blog\PersonalBlog.DataLayer\obj\Release\net8.0\ref\PersonalBlog.DataLayer.dll

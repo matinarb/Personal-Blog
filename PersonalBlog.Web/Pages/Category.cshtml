@@ -1,14 +1,14 @@
 ﻿@page "{slug}"
 @model MyApp.Namespace.CategoryModel
 @{
-    ViewData["Title"] = Model.category.Title;
+    ViewData["Title"] = Model.category?.Title??"";
 }
 <div class="container">
     <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
             <a href="/" class="breadcrumbs__url">خانه</a>
         </li>
-        @if (Model.category.Parent != null)
+        @if (Model.category?.Parent != null)
         {
             <li class="breadcrumbs__item">
                 <a asp-page="Category" asp-route-slug="@Model.category.Parent?.Slug"
@@ -21,7 +21,7 @@
         else
         {
             <li class="breadcrumbs__item breadcrumbs__item--current">
-                @Model.category.Title
+                @Model.category?.Title
             </li>
         }
 
