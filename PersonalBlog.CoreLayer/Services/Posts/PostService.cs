@@ -39,7 +39,7 @@ public class PostService : IPostService
 
     public OperationResult EditPost(EditPostDto editPost)
     {
-        var post = _context.Posts.AsNoTracking().FirstOrDefault(p => p.Id == editPost.PostId && p.IsDelete == false);
+        var post = _context.Posts.FirstOrDefault(p => p.Id == editPost.PostId && p.IsDelete == false);
         if (post == null) return OperationResult.NotFound();
 
         string oldImg = post.Image;
@@ -73,8 +73,11 @@ public class PostService : IPostService
 
     public FilterPostDto GetPostByFilter(PostFilterParams param)
     {
-        var result = _context.Posts.Where(p => p.IsDelete == false).OrderByDescending(p => p.CreationDate).AsQueryable();
 
+        var result = _context.Posts.Where(p => p.IsDelete == false).OrderByDescending(p => p.CreationDate).AsQueryable();
+        if (param.UserId != null)
+            result = result.Where(p => p.UserId == param.UserId).AsQueryable();
+            
         if (!string.IsNullOrWhiteSpace(param.CategorySlug))
             result = result.Where(p => p.Category.Slug == param.CategorySlug);
 

@@ -8,7 +8,6 @@ using PersonalBlog.DataLayer.Entities;
 
 namespace PersonalBlog.Web.Pages;
 
-[Authorize]
 public class IndexModel : PageModel
 {
     private readonly IMainPageService _mainPageService;

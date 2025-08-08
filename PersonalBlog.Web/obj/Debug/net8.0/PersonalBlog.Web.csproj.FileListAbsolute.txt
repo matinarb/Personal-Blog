@@ -3,8 +3,8 @@ E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\appsettings.json
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.staticwebassets.runtime.json
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.staticwebassets.endpoints.json
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.exe
-E:\GitHub\Personal-Blog\PersonalBlog.Web\bin\Debug\net8.0\PersonalBlog.Web.deps.json
-E:\GitHub\Personal-Blog\PersonalBlog.Web\bin\Debug\net8.0\PersonalBlog.Web.runtimeconfig.json
+E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.deps.json
+E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.runtimeconfig.json
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.dll
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\PersonalBlog.Web.pdb
 E:\GitHub\Personal-Blog\personalblog.web\bin\Debug\net8.0\Azure.Core.dll
@@ -162,9 +162,9 @@ E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.development.json
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\Personal.E6FB6710.Up2Date
+E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\Personal.E6FB6710.Up2Date
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\PersonalBlog.Web.dll
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\refint\PersonalBlog.Web.dll
 E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\PersonalBlog.Web.pdb
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\PersonalBlog.Web.genruntimeconfig.cache
-E:\GitHub\Personal-Blog\PersonalBlog.Web\obj\Debug\net8.0\ref\PersonalBlog.Web.dll
+E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\PersonalBlog.Web.genruntimeconfig.cache
+E:\GitHub\Personal-Blog\personalblog.web\obj\Debug\net8.0\ref\PersonalBlog.Web.dll

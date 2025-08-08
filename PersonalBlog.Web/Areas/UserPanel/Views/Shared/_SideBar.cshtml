@@ -1,0 +1,29 @@
+@{
+  var selected = ViewData["selected"]?.ToString().ToLower();
+}
+
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">منو</li>
+      <li class="@(selected == "index" ? "active" : null)">
+        <a asp-area="UserPanel" asp-controller="Home" asp-action="Index">
+          <i class="fa fa-th"></i> <span>داشبرد</span>
+        </a>
+      </li>
+      <li class="@(selected == "post" ? "active" : null)">
+        <a asp-area="UserPanel" asp-controller="Post" asp-action="Index">
+          <i class="fa fa-th"></i> <span>پست های من</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Logout">
+          <i class="fa fa-th"></i> <span>خروج از حساب</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</aside>

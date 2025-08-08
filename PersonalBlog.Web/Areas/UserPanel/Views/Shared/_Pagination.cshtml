@@ -1,0 +1,24 @@
+@model PersonalBlog.CoreLayer.Utilities.BasePagination
+@{
+    var currentPage = Model.CurrentPage;
+    var next = currentPage + 1;
+    var previous = currentPage - 1;
+}
+<div class="" id="example2_paginate">
+    <ul class="pagination">
+        <li class="paginate_button previous" id="example2_previous">
+            <a href="#" onclick="Pagination('@previous')">Previous</a>
+        </li>
+
+        @for (int i = Model.StartPage; i <= Model.EndPage; i++)
+        {
+            <li class="@(i == currentPage ? "active" : null)">
+                <a href="#" onclick="Pagination('@i')">@i</a>
+            </li>
+        }
+
+        <li class="paginate_button next" id="example2_next">
+            <a href="#" onclick="Pagination('@next')">Next</a>
+        </li>
+    </ul>
+</div>

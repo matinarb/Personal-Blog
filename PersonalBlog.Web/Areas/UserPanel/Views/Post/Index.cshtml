@@ -1,0 +1,39 @@
+@model PersonalBlog.CoreLayer.DTOs.Posts.FilterPostDto
+@using PersonalBlog.CoreLayer.Utilities;
+@using PersonalBlog.CoreLayer.Services.Categories
+@inject ICategoryService categoryService
+@{
+    ViewData["Title"] = "پست ها";
+    ViewData["selected"] = "post";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="UserPanel" asp-controller="Post" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a>
+        </li>
+        <li class="active">@ViewData["Title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <a class="btn btn-success" asp-area="UserPanel" asp-controller="Post" asp-action="Add"
+        style="margin-bottom: 5px;">افزودن پست جدید</a>
+    <div id="filter-post">
+        <partial name="_PostFiltering" model="@Model" />
+    </div>
+</section>
+
+@section script {
+    <script>
+        function Pagination(i) {
+            $.ajax({
+                url: `/UserPanel/Post/Pagination?pageId=${i}&search=@Model.filterParams.Search&categorySlug=@Model.filterParams.CategorySlug`,
+                type: 'GET'
+            })
+                .done(function (data) {
+                    document.getElementById("filter-post").innerHTML = data;
+                })
+        }
+    </script>
+}

@@ -1,5 +1,5 @@
 @{
-  var selected = ViewData["selected"]?.ToString().ToLower();
+  var selected = ViewData["selected"]?.ToString()?.ToLower();
 }
 
 <aside class="main-sidebar">
@@ -27,6 +27,11 @@
       <li class="@(selected=="post"?"active":null)">
         <a asp-area="admin" asp-controller="Post" asp-action="Index">
           <i class="fa fa-th"></i> <span>پست ها</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Logout">
+          <i class="fa fa-th"></i> <span>خروج از حساب</span>
         </a>
       </li>
     </ul>

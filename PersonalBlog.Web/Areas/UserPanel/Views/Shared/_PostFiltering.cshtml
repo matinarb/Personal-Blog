@@ -1,0 +1,89 @@
+@using PersonalBlog.CoreLayer.DTOs.Posts
+@model FilterPostDto
+@using PersonalBlog.CoreLayer.Services.Categories
+@using PersonalBlog.CoreLayer.Utilities;
+@inject ICategoryService _categoryService
+@{
+    var categories = _categoryService.GetAllCategories();
+    var categorySlug = Model.filterParams.CategorySlug;
+    var count = 1;
+}
+<form method="get" asp-area="UserPanel" asp-controller="Post" asp-action="Index">
+    <div style="margin: 10px;grid-gap: 10px;display: flex;align-items: center;">
+    <label>جستجو</label>
+    <input type="text" value="@Model.filterParams.Search" name="search">
+
+    <label>دسته بندی</label>
+    <select name="categorySlug" >
+    <option value="">انتخاب کنید</option>
+    @foreach (var c in categories)
+    {
+        if (c.ParentId == null)
+        {
+            <option value="@c.Slug" style="color: rgb(77, 77, 255);" selected="@(categorySlug == c.Slug ? "selected" : null)">
+                @c.Title
+            </option>
+            foreach (var s in categories)
+            {
+                if (s.ParentId == c.Id)
+                {
+                    <option value="@s.Slug" style="color: rgb(62, 203, 250);" selected="@(categorySlug ==s.Slug ? "selected" : null)">
+                        @s.Title</option>
+                }
+            }
+        }
+    }
+        </select>
+
+        <button type="submit" class="btn btn-info btn-sm">فیلتر</button>
+    </div>
+</form>
+
+<div class="box box-primary">
+            <div class="box box-body p-0">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>عنوان</th>
+                            <th>عکس</th>
+                            <th>پست ویژه</th>
+                            <th>نویسنده</th>
+                            <th>گروه</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var p in Model.posts)
+                        {
+                            <tr>
+                                <td>@count</td>
+                                <td>@p.Title</td>
+                                <td><img style="width: 150px;" src="@Directories.GetThumbImg(p.Image)"></td>
+                                <td>
+                                    @if (p.IsSpecial)
+                                    {
+                                        <li class="fa fa-check text-success"></li>
+                                    }
+                                    else
+                                    {
+                                        <li class="fa fa-close text-danger"></li>
+                                    }
+                                </td>
+                                <td>@p.User?.UserName</td>
+                                <td>@p.Category?.Title</td>
+                                <td>
+                                    <a asp-area="UserPanel" asp-controller="Post" asp-action="Edit" asp-route-id="@p.PostId" class="btn btn-info btn-sm">ویرایش</a>
+                                    <a asp-area="UserPanel" asp-controller="Post" asp-action="Delete" asp-route-id="@p.PostId" class="btn btn-danger btn-sm">حذف</a>
+                                </td>
+                            </tr>
+                            count++;
+                        }
+
+
+                    </tbody>
+                </table>
+                <partial name="_Pagination" model="@Model" />
+            </div>
+        </div>

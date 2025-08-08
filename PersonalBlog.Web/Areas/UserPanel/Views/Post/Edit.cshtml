@@ -1,0 +1,65 @@
+@using PersonalBlog.CoreLayer.Services.Categories
+@model PersonalBlog.Web.Areas.UserPanel.Models.Posts.EditPostViewModel
+@inject ICategoryService categoryService
+@{
+    ViewData["Title"] = "ویرایش پست";
+    ViewData["selected"] = "post";
+    var categories = categoryService.GetAllCategories();
+}
+<section class="content-header">
+    <h1>
+        @ViewData["Title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="UserPanel" asp-controller="Post" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a>
+        </li>
+        <li class="active">@ViewData["Title"]</li>
+    </ol>
+</section>
+<section>
+    <div class="box box-primary">
+        <form enctype="multipart/form-data" role="form" method="post" asp-area="UserPanel" asp-controller="Post"
+            asp-action="edit">
+            <div class="box-body row">
+                <div class="col-md-3">
+                    @Html.EditorFor(Model => Model.Title)
+
+                </div>
+                <div class="col-md-3">
+                    @Html.EditorFor(Model => Model.Image)
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label asp-for="CategoryId"></label>
+                        <select asp-for="CategoryId" class="form-control" id="category">
+                            <option value="null">انتخاب کنید</option>
+                            @foreach (var c in categories)
+                            {
+                                if (c.ParentId == null)
+                                {
+                                    <option value="@c.Id" style="color: rgb(77, 77, 255);">@c.Title</option>
+                                    foreach (var s in categories)
+                                    {
+                                        if (s.ParentId == c.Id)
+                                        {
+                                            <option value="@s.Id" style="color: rgb(62, 203, 250);"> @s.Title</option>
+                                        }
+                                    }
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="CategoryId"></span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(Model => Model.Description)
+
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">ارسال</button>
+            </div>
+        </form>
+    </div>
+
+</section>

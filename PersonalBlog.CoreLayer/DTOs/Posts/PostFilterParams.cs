@@ -7,5 +7,6 @@ public class PostFilterParams
     public int Take { get; set; }
     public string Search { get; set; }
     public string CategorySlug { get; set; }
+    public int? UserId { get; set; }
 
 }

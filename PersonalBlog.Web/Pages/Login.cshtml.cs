@@ -19,6 +19,7 @@ namespace PersonalBlog.Web.Pages
         public required string UserName { get; set; }
         [Display(Name = "رمز عبور")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
+        [MinLength(8, ErrorMessage = "{0} باید بیشتر از 8 کاراکتر باشد")]
         public required string Password { get; set; }
 
         private readonly IUserService _userService;
